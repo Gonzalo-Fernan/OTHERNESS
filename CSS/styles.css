@@ -1,0 +1,863 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+/* ----------INDEX---------- */
+
+
+/* ----------BOOTSTRAP---------- */
+
+
+.offcanvas{
+    display: none;
+    transition: 0.5s;
+    background-color: #ffd783;
+}
+.offcanvas-title{
+    font-weight: bolder;
+}
+.btn-primary{
+    display: none;
+    background-color: #c0a261;
+    font-weight: bolder;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #aa671d;
+}
+.btn-primary h5{
+    padding: 5px;
+}
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+}
+.offcanvas-body a{
+    text-decoration: none;
+    color: #000;
+}
+.offcanvas-body a:hover{
+    background-color: #ddab40;
+    color: white;
+    scale: 1.05;
+}
+
+
+/* ----------INDEX NAVBAR----------*/
+header{
+    position: relative;
+}
+.navBar{
+    width: 100%;
+    height: 120px;
+    background-color: #ffd783;
+    font-family: montserrat, sans-serif;
+    display: flex;
+}
+.navBar div{
+    display: flex;
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+}
+.Logo{
+    cursor: pointer;
+    margin-top: 0.5%;
+    padding: 0;
+    height: 80%;
+}
+.navBar h3{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.navBar a{
+    text-decoration: none;
+}
+
+.navBar h2{
+    padding-left: 5px;
+    margin-top: 63px;
+    font-size: 10px;
+}
+.nav-links {
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    font-family: montserrat, sans-serif;
+    color: black;
+    justify-content: end;
+    flex-grow: 4;
+
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: black;
+}
+ul hr{
+    border: none;
+    width: 1px;
+    border-left: 2px solid #aa671d;
+    height: 20px;
+} 
+
+/* ----------INDEX MAIN SECTION---------- */
+
+main{
+    width: 100%;
+    font-family: montserrat,sans-serif;
+}
+.mainSection { 
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.mainSection div{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 50%;
+}
+.textoIzquierda{
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-align: left;
+}
+.textoIzquierdaDescripcion{
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    width: 500px;
+}
+.Boton{
+    margin-top: 15%;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: #444444;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #444444;
+    color: rgb(255, 255, 255);
+}
+.imagenAula {
+    margin-right: 2%;
+    margin-top: 3%; 
+    object-fit: cover;
+    width: 50%;
+    height: 600px; 
+}
+
+
+
+/*  ----------INDEX MAIN SECTION TEXTOS---------- */
+
+.textos{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    text-align: center;
+    margin: 10% 10% 10% 20%;
+}
+.textos article h3{
+    font-size: 22px;
+}
+.textos article p{
+    padding-left: 20%;
+    width: 200px;
+    font-size: 12px;
+}
+.textos article img{
+ width: 80px;
+ height: 80px;
+}
+
+
+
+/*  ----------INDEX MAIN SECTION GALERIA---------- */
+
+.mainSectionGaleria{
+    display: inline-block;
+    background-color: #ffd783;
+    width: 100%;
+    height: 100%;
+}
+.mainSectionGaleria div{
+    vertical-align: top;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 0;
+    display: inline-block;
+    width: 40%;
+
+}
+.BotonGaleria{
+    margin-top: 8%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: #444444;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #444444;
+    color: rgb(255, 255, 255);
+
+}
+.textoIzquierdaGaleria{
+    width: 600px;
+    font-size: 50px;
+    text-align: left;
+   
+}
+.textoIzquierdaDescripcionGaleria{
+    font-size: 25px;
+    width: 400px;
+    
+}
+.imagenEspacio{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    object-fit: cover;
+    width: 40%;
+    height: 600px;
+}
+
+
+ 
+
+
+/* ----------CURSOS---------- */
+
+
+.tituloCursos{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 50px;
+}
+
+.conteinerCursos{
+    justify-content: center;
+    margin: 80px 0px 500px 0px;
+    text-align: center;
+    width: 100%;
+    gap: 10%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    height: 100%;
+    
+}
+.cursos{
+    height: 100%;
+    text-align: center;
+    background-color: #ffd783;
+    border-radius: 30px 30px 0px 0px;
+
+}
+.cursos img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px; 
+
+}
+.cursos h3, p{
+    padding: 10px;
+}
+.cursos p{
+    font-size: 12px;
+    padding: 5px 0px 0px 0px;
+}
+.botonCursos{
+    cursor: pointer;
+    font-family: montserrat,sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: #44433f;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px #c0a261;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/* ----------CONTACTO---------- */
+
+.conteinerContacto{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.tituloContacto{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 50px;
+}
+article form p{
+    font-weight: bold;
+}
+.conteinerform{
+    text-align: center;
+    margin-left: 20%;
+    width: 70%;
+    height: 100%;
+    background-color:#fff1d7;
+    border-radius: 15%;
+}
+
+.conteinerRedes{
+    margin-top: 4%;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.conteinerRedes div{
+    margin-top: 20px;
+
+}
+.conteinerRedes div img{
+    width: 30px;
+    height: 30px;
+    
+}
+.conteinerRedes div p {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 1%;
+    text-align: left;
+    width: 250px;
+    height: 10px;
+    background-color: #fff1d7;
+    border-radius: 10px;
+}
+.formulario input{
+    width: 80%;
+    font-family: montserrat, sans-serif;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px 10px 5px 10px;
+    border: none;
+}
+.formulario textarea{
+    width: 80%;
+    font-family: montserrat, sans-serif;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px 10px 5px 10px;
+    border: none;
+}
+
+.botonFormulario{
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+    height: 40px;
+    width: 25%;
+    border: none;
+    background-color: #444444;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #444444;
+    color: rgb(255, 255, 255);
+}
+
+.ubicacion{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 100%;
+    background-color: #fff1d7;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ubicacion article img{
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+}
+.ubicacionTextos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.ubicacionTextos h2{
+    padding: 15px;
+    width: 60%;
+    text-align: center;
+}
+.ubicacion h3{
+    padding: 15px;
+    width: 300px;
+}
+.ubicacionTextos iframe{
+    padding: 5px;
+    width: 400px;
+    height: 300px;
+    border: none;
+}
+
+
+
+/* -------------SOBRE NOSOTROS---------- */
+
+.conteinerSobreNosotros{
+    display: flex;
+    width: 100%;
+}
+
+.SobreNosotros{
+    margin-top: 50px;
+    text-align: center;
+}
+.SobreNosotros h1{
+    font-size: 50px;
+}
+.SobreNosotros img{
+    margin-top: 80px;
+    object-fit: cover;
+    width: 60%;
+    height: 300px;
+}
+
+.SobreNosotros p{
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 50px;
+    width: 60%;   
+}
+.conteinerGaleria{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    margin-top: 150px;
+    text-align: center;
+    background-color: #fff1d7;
+    height: 800px;
+}
+.CarruselImagenes{
+    background-color: #fff1d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+}
+.CarruselImagenes h2{
+    margin-top: 50px;
+    font-weight: bolder;
+}
+.CarruselImagenes p{
+    margin-bottom: 50px;
+}
+
+
+
+/*---------Bootstrap Carrursel-------*/
+.CarruselImagenes{
+    width: 100%;
+}
+.carouselExample{
+    margin: 0%;
+}
+.carousel{
+    margin-bottom: -200px;
+    width: 100%;
+    height: 850px;
+
+}
+.carousel-inner{
+    margin: 0%;
+    margin-left: 20%;
+    height: 80%;
+    width: 80%;
+}
+.carousel-item{
+    width: 80%;
+    height: 1500px;
+}
+.d-block{
+object-fit: cover;
+width: 100%;
+height: 80%;
+}
+.carousel-control-next{
+    right: 16%;
+    height: 80%;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover{
+    color: white;
+    scale: 1.4;
+}
+.carousel-control-prev{
+    left: 20%;
+    height: 80%;
+}
+
+
+
+
+/*  -------------TESTIMONIOS ------------- */
+
+.conteinerTestimonios{
+    background-color: #fff1d7;
+    text-align: center;
+}
+.tituloTestimonios{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.conteinerTestimonios h3{
+    margin-top: 75px;
+}
+.conteinerTestimonios p{
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+.conteinerCards{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cards div{
+    margin-top: 50px;
+    padding-top: 30px;
+    height: 300px;
+    text-align: center;
+    width: 55%;
+    
+} 
+.cards div p{
+    font-family: montserrat, sans-serif;
+    margin-top: 20px;
+    width: 90%;
+}
+.imagenTestimonio{
+    margin-top: 50px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+.card-medio{
+    background-color: #fff1d7;
+}
+
+
+
+/* -------------FOOTER---------- */
+
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: #ffd783;
+    font-family: montserrat, sans-serif;
+    margin-top: 150px;
+}
+footer h4{
+    cursor: pointer;
+    padding-top: 50px;
+}
+footer hr{
+    width: 30%;
+    margin-left: 35%;
+    border-top: 2px solid #cfab5b;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ---------MEDIA QUERIES---------- */
+@media screen and (max-width: 400px){
+    .navBar div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navBar div h2{
+        margin: 0;
+    }
+}
+
+/* ---------MEDIA QUERIES INDEX---------- */
+
+
+ @media  screen and (max-width: 1225px) {
+    .mainSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainSection div{
+        margin-top: 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .textoIzquierda, .textoIzquierdaDescripcion{
+        text-align: center;
+    }
+
+    .imagenAula{
+        align-items: center;
+        width: 80%;
+    }
+    
+    .mainSectionGaleria{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .mainSectionGaleria div{
+        margin-top: 50px;
+        margin-left: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    .mainSectionGaleria img{
+        width: 80%;
+    }
+    .mainSectionGaleria div p{
+        text-align: center;
+    }
+    
+ }
+
+
+/* ---------MEDIA QUERIES Menu Boostrap---------- */
+
+
+
+ @media screen and (max-width: 970px){
+
+    .nav-links{
+       display: none;
+    }
+    .navBar{
+        display: flex;
+    }
+
+    .offcanvas{
+        display: flex;
+        transition: 0.5s;
+        background-color: #ffd783;
+    }
+    .offcanvas-title{
+        font-weight: bolder;
+    }
+     .btn-primary{
+        display: block;
+        height: 30%;
+        margin-left: 25%;
+        width: 50%;
+        background-color: #c7b07f;
+        font-weight: bolder;
+        border: none;
+    } 
+    .btn-primary:hover{
+        background-color: #94722a;
+        width: 100%;
+        transition: all .5s ;
+        margin-left: 0;
+    }
+  
+    .offcanvas-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .offcanvas-body a{
+        text-decoration: none;
+        color: #000;
+    }
+    .offcanvas-body a:hover{
+        background-color: #ddab40;
+        color: white;
+        scale: 1.05;
+    }
+} 
+
+@media  screen and (max-width: 1072px){
+    .textos{
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 665px){
+    .textoIzquierda{
+        width: 80%;
+        font-size: 30px;
+    }
+    .textoIzquierdaDescripcion{
+        width: 80%;
+        font-size: 16px;
+    }
+    .textoIzquierdaGaleria{
+        width: 80%;
+        font-size: 30px;
+    }
+    .textoIzquierdaDescripcionGaleria{
+        width: 80%;
+        font-size: 16px;
+    }
+
+    
+  
+  
+}
+
+/* ---------MEDIA QUERIES CURSOS---------- */
+
+@media  screen and (max-width: 707px) {
+    .conteinerCursos{
+        grid-template-columns: 80%;
+        gap: 50px
+    }
+
+
+}
+
+/* ---------MEDIA QUERIES CONTACTO---------- */
+
+
+
+@media screen and (max-width: 950px){
+    .conteinerContacto,
+    .ubicacion{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+  
+  
+}
+
+/* ---------MEDIA QUERIES SOBRE NOSOTROS ---------- */
+
+@media screen and (max-width: 900x){
+   .SobreNosotros p{
+    width: 80%;
+    font-size: 16px;
+   }
+  
+}
+
+@media screen and (max-width: 500px){
+    .SobreNosotros img{
+        width: 100%;
+    }
+    .carousel-inner{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+    .carousel-item{
+        width: 100%;
+    }
+}
+
+/* ---------MEDIA QUERIES TESTIMONIOS---------- */
+
+@media screen and (max-width: 745px){
+    .cards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+        margin-top: 20px;
+    }
+    .cards div{
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+        
+    } 
+    .cards div p{
+        width: 100%;
+    }
+    .card-fondo{
+        background-color: #fff1d7;
+    }
+    .imagenTestimonio{
+        margin-top: 10px;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
+    .conteinerTestimonios p{
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+   
+    
+    
+}
+@media screen and (max-width: 745px){
+    .tituloTestimonios{
+        font-size: 35px;
+    }
+    .conteinerTestimonios article h3{
+        font-size: 22px;
+    }
+    .conteinerTestimonios article p{
+        font-size: 13px;
+    }
+    
+}
+
+
+

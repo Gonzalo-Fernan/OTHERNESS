@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonios</title>
+    <!-- Link para conectar con bootstrap--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+    <!-- Link fuentes de google--> <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Link fuentes que conecta con el css--><link rel="stylesheet" href="../CSS/styles.css">
+    <!-- Link Favicon--><link rel="shortcut icon" href="../assets/logos/LogoOthernessFavi.svg">
+</head>
+<body>
+    <header>
+
+<!--NAVBAR CON LINKS DE NAVEGACION-->
+
+        <nav class="navBar">   
+           <a href="../index.html"><img src="../assets/logos/LogoOtherness.svg" alt="Logo Otherness " class="Logo"></a>
+           <div> 
+               <a href="../index.html"><h3>OTHERNESS</h3></a>
+               <h2>Espacio Creativo</h2>
+           </div>
+           <ul class="nav-links" id="nav-links">
+               <li> <a href="cursos.html">Cursos</a></li>
+               <hr>
+               <li> <a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+               <hr>
+               <li> <a href="testimonios.html">Testimonios</a></li>
+               <hr>
+               <li> <a href="contacto.html">Contacto</a></li>
+           </ul>
+       </nav>
+   </header>
+   <main>
+<!-- menu offcanvas traido de bootstrap--> 
+        <div class="contenedor-boton">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">MENU</button>
+        </div>    
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">OTHERNESS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="../index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+        </div> 
+        </div>
+
+<!-- Seccion de testimonios -->
+
+        <h1 class="tituloTestimonios">TESTIMONIOS</h1>
+        
+        <section class="conteinerTestimonios">
+            
+            <article>
+                <h3>Te compartimos las experiencia de personas que confian en nosotros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptates nemo obcaecati totam? Voluptatum possimus asperiores, iure sint cum nesciunt. Velit, et facere quisquam a unde odit cupiditate, ratione quas facilis autem voluptatum, molestias voluptatibus nam dolore commodi. Voluptatem minus minima quasi ex vitae, architecto distinctio, impedit quaerat repellat provident cupiditate. Iusto porro distinctio necessitatibus autem facilis excepturi, iure aliquid laboriosam reprehenderit, pariatur ea amet culpa. Eligendi accusantium, repellendus id ratione minus tenetur cupiditate iusto fugiat explicabo expedita atque veniam? Beatae odit suscipit labore minima maxime ullam placeat velit sed incidunt eveniet doloribus pariatur quaerat dolorem quisquam, perferendis voluptate! Pariatur!</p>
+            </article>
+        </section>
+
+<!--Testimonios de alumnos-->
+
+        <section class="conteinerCards">
+            <article class="cards">
+                    <img class="imagenTestimonio" src="../assets/images/fulanoDeTal.jpg" alt="">
+                <div class="descripcionPersonas card-texto">
+                    <h2>Fulano de Tal</h2>
+                    <h3>Ingeniero en casi todo</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, laboriosam ipsam! Accusamus, alias? Temporibus voluptates praesentium ipsa, minus suscipit reiciendis rem est ut, id ullam nulla velit eius eum harum accusamus iste deserunt?</p>
+                </div>
+            </article>
+            <article class="cards card-fondo">
+                    <img class="imagenTestimonio" src="../assets/images/LoremIpsum.jpg" alt="">
+                <div class="card-medio card-texto">
+                    <h2>Lorem Ipsum</h2>
+                    <h3>Licenciada en lenguas muertas</h3>
+                    <p class="culo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, laboriosam ipsam! Accusamus, alias? Temporibus voluptates praesentium ipsa, minus suscipit reiciendis rem est ut, id ullam nulla velit eius eum harum accusamus iste deserunt? </p>
+                </div>
+            </article>
+            <article class="cards">
+                    <img img class="imagenTestimonio" src="../assets/images/JuanCarlosMandanga.jpg" alt="">
+                <div class="card-texto">
+                    <h2>Juan Carlos Mandanga</h2>
+                    <h3>Inspector de zocalos</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, laboriosam ipsam! Accusamus, alias? Temporibus voluptates praesentium ipsa, minus suscipit reiciendis rem est ut, id ullam nulla velit eius eum harum accusamus iste deserunt?</p>
+                </div>
+            </article>
+        </section>
+        
+    </main>
+    
+<!-- Footer -->
+
+    <footer>
+        <a href="../index.html"><h4>OTHERNESS</h4></a>
+        <hr>
+        <p>Espacio Creativo</p>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

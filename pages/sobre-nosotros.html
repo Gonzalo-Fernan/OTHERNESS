@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <!-- Link para conectar con bootstrap--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+    <!-- Link fuentes de google--> <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Link fuentes que conecta con el css--><link rel="stylesheet" href="../CSS/styles.css">
+    <!-- Link Favicon--><link rel="shortcut icon" href="../assets/logos/LogoOthernessFavi.svg">
+</head>
+<body>
+    <header> 
+
+<!-------NAVBAR CON LINKS DE NAVEGACION-->
+
+        <nav class="navBar">   
+           <a href="../index.html"><img src="../assets/logos/LogoOtherness.svg" alt="Logo Otherness " class="Logo"></a>
+           <div> 
+               <a href="../index.html"><h3>OTHERNESS</h3></a>
+               <h2>Espacio Creativo</h2>
+           </div>
+           <ul class="nav-links" id="nav-links">
+               <li> <a href="cursos.html">Cursos</a></li>
+               <hr>
+               <li> <a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+               <hr>
+               <li> <a href="testimonios.html">Testimonios</a></li>
+               <hr>
+               <li> <a href="contacto.html">Contacto</a></li>
+           </ul>
+       </nav>
+   </header>
+   <main>
+
+<!-- menu offcanvas traido de bootstrap--> 
+
+        <div class="contenedor-boton">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">MENU</button>
+        </div>    
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">OTHERNESS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="../index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+        </div> 
+        </div>
+
+<!-- Seccion Sobre nosotros -->
+
+        <section class="conteinerSobreNosotros">
+            <article class="SobreNosotros">
+                <h1>ESPACIO CREATIVO</h1>
+                <img src="../assets/images/fotoSobreNosotros.jpeg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam suscipit quibusdam culpa ducimus quis numquam aliquid cum in adipisci tempore provident ab quaerat alias itaque nulla, iure error facere optio officiis temporibus sunt hic quia. Debitis obcaecati, laborum asperiores corporis perferendis, eum blanditiis perspiciatis eius ipsam expedita tempore itaque atque reiciendis voluptatem eos pariatur nostrum saepe ipsum quod similique illo! Pariatur quas optio commodi est neque atque, labore molestias voluptates veniam rerum dicta, mollitia, veritatis alias doloremque aspernatur! Alias voluptatibus rerum cumque distinctio molestiae cum non, quae voluptatum velit sunt sequi! Iure aspernatur placeat repellendus porro modi quia autem nesciunt amet itaque molestiae at consequuntur, sit vitae dolore recusandae provident? Similique ipsam dolores, natus accusantium iure quas, impedit rerum laborum minus neque, aliquid ipsa doloremque animi quae excepturi! Sunt, unde vitae labore ab quasi obcaecati perferendis eveniet voluptas ratione pariatur sint accusantium sequi dignissimos tenetur non illum doloremque ipsum veritatis, temporibus iste harum. Iusto autem ex nemo sit vero assumenda voluptatem minus necessitatibus, maxime maiores eum ducimus exercitationem cupiditate. Id, veritatis sint! Sunt maxime minima incidunt dolore esse ipsa ducimus est magni exercitationem. Amet distinctio voluptatibus iusto, ducimus earum error, et quidem harum aliquid iste accusamus. Libero, repellendus aspernatur.</p>
+            </article>
+        </section>
+
+<!-- Seccion de Galeria con carrusel bootsatrap--> 
+
+        <section class="CarruselImagenes">
+            <h2>GALERIA</h2>
+            <p>Conoce nuestro espacio desde dentro</p>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/CursoManejoMaquina.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/aula.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/espacio.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    
+    </main>
+
+<!-- Footer-->
+     
+    <footer>
+        <a href="../index.html"><h4>OTHERNESS</h4></a>
+        <hr>
+        <p>Espacio Creativo</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

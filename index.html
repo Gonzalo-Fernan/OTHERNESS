@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTHERNESS</title>
+     <!-- Link para conectar con bootstrap--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <!-- Link fuentes de google--> <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+     <!-- Link fuentes que conecta con el css--> <link rel="stylesheet" href="CSS/styles.css">
+     <!-- Link Favicon--> <link rel="icon" href="assets/logos/LogoOthernessFavi.svg"/>
+</head>
+<body>
+    <header> 
+
+<!--NAVBAR CON LINKS DE NAVEGACION-->
+
+        <nav class="navBar">    
+            <a href="index.html"><img src="assets/logos/LogoOtherness.svg" alt="Logo Otherness " class="Logo"></a>
+            <div> 
+                <a href="index.html"><h3>OTHERNESS</h3></a>
+                <h2>Espacio Creativo</h2>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li> <a href="pages/cursos.html">Cursos</a></li>
+                <hr>
+                <li> <a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <hr>
+                <li> <a href="pages/testimonios.html">Testimonios</a></li>
+                <hr>
+                <li> <a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+  <!-- menu offcanvas traido de bootstrap--> 
+
+    <div class="contenedor-boton">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">MENU</button>
+    </div>    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">OTHERNESS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="index.html">Inicio</a>
+        <a href="pages/cursos.html">Cursos</a>
+        <a href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="pages/testimonios.html">Testimonios</a>
+        <a href="pages/contacto.html">Contacto</a>
+    </div> 
+    </div>
+
+<!-- SECCION PRINCIPAL  -->
+
+        <section class="mainSection">
+            <div>
+                <p class="textoIzquierda"><strong>Empeza tu curso hoy Descubri tu pontencial</strong></p>
+                <p class="textoIzquierdaDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias consequatur dolorem harum commodi nemo ullam assumenda sed consequuntur, deleniti dicta suscipit nisi officiis, quisquam tempora quidem rem odio explicabo quae? Id asperiores illo qui perspiciatis quos, illum quas expedita omnis</p>
+                <a href="pages/cursos.html" ><button class="Boton"> Acceder a Cursos</button></a>
+            </div>
+            <img class="imagenAula" src="assets/images/aula.jpg" alt="imagen Edificio Otherness">
+        </section>
+
+<!-- SECCION DE 3 TEXTOS EN EL MEDIO  -->
+
+        <section class="textos">
+            <article>
+                <img src="assets/icons/DiseñoIcono.svg" alt="Icono Diseño">
+                <h3>Diseña tu prenda</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, consequuntur tenetur? Sequi ea voluptas dolore, consequatur</p>    
+            </article>
+            <article>
+                <img src="assets/icons/MaquinaIcon.svg" alt="Icono Diseño">
+                <h3>Aprende a confeccionarla</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis accusamus doloribus. Esse ratione natus non deserunt minima, </p>
+            </article>
+            <article>
+                <img src="assets/icons/VestidoIcon.svg" alt="Icono Diseño">
+                <h3>Llevate la prenda a casa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, nisi eligendi incidunt repudiandae distinctio exercitationem </p>
+            </article>    
+        </section>
+
+<!-- SECCION GALERIA  -->
+
+        <section class="mainSectionGaleria">
+            <div>
+                <p class="textoIzquierdaGaleria"><strong>Descubri nuestro Espacio atraves de nuestra Galeria</strong></p>
+                <p class="textoIzquierdaDescripcionGaleria">Te invitamos a conocer nuestras instalaciones donde compratimos con nuestros alumnos las clases, workshops, etc</p>
+                <a href="pages/sobre-nosotros.html"><button class="BotonGaleria">Galeria</button></a>
+            </div>
+            <img class="imagenEspacio" src="assets/images/espacio.jpg" alt="imagen espacio">
+        </section>
+    </main>
+
+<!-- FOOTER COMPARTIDO POR TODAS LA PAGINAS DEL SITIO  -->
+
+    <footer>
+        <a href="index.html"><h4>OTHERNESS</h4></a>
+        <hr>
+        <p>Espacio Creativo</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
