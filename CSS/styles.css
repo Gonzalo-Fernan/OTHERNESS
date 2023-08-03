@@ -116,32 +116,28 @@ main{
     font-family: montserrat,sans-serif;
 }
 .mainSection { 
-    display: flex;
-
-    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 .mainSection div{
-    margin-top: 5%;
-    margin-left: 10%;
-    width: 50%;
+    margin-top: 2%;
+    width: 90%;
+    padding: 5%;
 }
 .textoIzquierda{
-    width: 600px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     font-size: 50px;
     text-align: left;
 }
 .textoIzquierdaDescripcion{
-    padding: 0px;
-    margin: 0px;
-    font-size: 25px;
-    width: 500px;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
 }
 .Boton{
-    margin-top: 15%;
+    margin-top: 10%;
     cursor: pointer;
     font-family: montserrat, sans-serif;
     height: 50px;
@@ -153,11 +149,11 @@ main{
     color: rgb(255, 255, 255);
 }
 .imagenAula {
-    margin-right: 2%;
+
+    width: 90%;
     margin-top: 3%; 
     object-fit: cover;
-    width: 50%;
-    height: 600px; 
+    height: 650px; 
 }
 
 
@@ -189,23 +185,40 @@ main{
 /*  ----------INDEX MAIN SECTION GALERIA---------- */
 
 .mainSectionGaleria{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: #ffd783;
-    width: 100%;
     height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .mainSectionGaleria div{
-    vertical-align: top;
     margin-top: 2%;
-    margin-left: 10%;
-    padding: 0;
-    display: inline-block;
-    width: 40%;
+    width: 100%;
+
+}
+.textoIzquierdaGaleria{
+    font-size: 50px;
+    text-align: left;
+    width: 90%;
+    padding: 5%;
+}
+.textoIzquierdaDescripcionGaleria{
+    text-align: left;
+    padding: 5%;
+    font-size: 25px;
+    width: 90%;
+}
+.imagenEspacio{
+    object-fit: cover;
+    width: 95%;
+    height: 600px;
+    padding: 5%;
 
 }
 .BotonGaleria{
-    margin-top: 8%;
-    margin-bottom: 3%;
+    margin-top: 3%;
     cursor: pointer;
     font-family: montserrat, sans-serif;
     height: 50px;
@@ -216,24 +229,6 @@ main{
     box-shadow: 3px 3px 10px #444444;
     color: rgb(255, 255, 255);
 
-}
-.textoIzquierdaGaleria{
-    width: 600px;
-    font-size: 50px;
-    text-align: left;
-   
-}
-.textoIzquierdaDescripcionGaleria{
-    font-size: 25px;
-    width: 400px;
-    
-}
-.imagenEspacio{
-    margin-top: 2%;
-    margin-bottom: 3%;
-    object-fit: cover;
-    width: 40%;
-    height: 600px;
 }
 
 
@@ -336,7 +331,11 @@ article form p{
     background-color: rgb(255, 255, 255);
 }
 .conteinerRedes div{
+    display: flex;
+    flex-direction: column 50% 50%;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 
 }
 .conteinerRedes div img{
@@ -349,10 +348,10 @@ article form p{
     margin-top: 5%;
     margin-left: 1%;
     text-align: left;
-    width: 250px;
-    height: 10px;
+    width: 260px;
+    height: 30px;
     background-color: #fff1d7;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 .formulario input{
     width: 80%;
@@ -608,6 +607,9 @@ footer a{
 
 
 /* ---------MEDIA QUERIES---------- */
+
+/* ---------MEDIA QUERIES Navbar---------- */
+
 @media screen and (max-width: 400px){
     .navBar div{
         display: flex;
@@ -624,53 +626,70 @@ footer a{
 
 
  @media  screen and (max-width: 1225px) {
-    .mainSection{
-        flex-direction: column;
-        align-items: center;
-    }
-    .mainSection div{
-        margin-top: 50px;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-    }
-    .textoIzquierda, .textoIzquierdaDescripcion{
-        text-align: center;
-    }
-
-    .imagenAula{
-        align-items: center;
-        width: 80%;
-    }
-    
-    .mainSectionGaleria{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
-    .mainSectionGaleria div{
-        margin-top: 50px;
-        margin-left: 0px;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-        text-align: center;
-    }
-    .mainSectionGaleria img{
-        width: 80%;
-    }
-    .mainSectionGaleria div p{
-        text-align: center;
-    }
     
  }
+ @media  screen and (max-width: 1072px){
+    .textos{
+        flex-direction: column;
+
+    }
+    .textoIzquierda,
+    .textoIzquierdaGaleria{
+        font-size: 26px;
+    }
+    .textoIzquierdaDescripcion,
+    .textoIzquierdaDescripcionGaleria{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .mainSection,
+    .mainSectionGaleria{
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .textoIzquierda,
+    .textoIzquierdaGaleria{
+        width: 90%;
+        margin: 0;
+        padding: 5px;
+        font-size: 22px;
+    }
+    .textoIzquierdaDescripcion,
+    .textoIzquierdaDescripcionGaleria{
+        width: 90%;
+        margin: 0;
+        padding: 5px;
+        font-size: 18px;
+    }
+    .textoIzquierdaGaleria,
+    .textoIzquierdaDescripcionGaleria{
+        margin-left: 5%;
+    }
+    .imagenAula,
+    .imagenEspacio{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .mainSectionGaleria div{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .textoIzquierda,
+    .textoIzquierdaGaleria{
+        font-size: 18px;
+    }
+    .textoIzquierdaDescripcion,
+    .textoIzquierdaDescripcionGaleria{
+        font-size: 16px;      
+    }
+}
 
 
-/* ---------MEDIA QUERIES Menu Boostrap---------- */
+/* ---------MEDIA QUERIES Menu offcanvas Boostrap---------- */
 
 
 
@@ -722,35 +741,6 @@ footer a{
     }
 } 
 
-@media  screen and (max-width: 1072px){
-    .textos{
-        flex-direction: column;
-
-    }
-}
-
-@media screen and (max-width: 665px){
-    .textoIzquierda{
-        width: 80%;
-        font-size: 30px;
-    }
-    .textoIzquierdaDescripcion{
-        width: 80%;
-        font-size: 16px;
-    }
-    .textoIzquierdaGaleria{
-        width: 80%;
-        font-size: 30px;
-    }
-    .textoIzquierdaDescripcionGaleria{
-        width: 80%;
-        font-size: 16px;
-    }
-
-    
-  
-  
-}
 
 /* ---------MEDIA QUERIES CURSOS---------- */
 
@@ -767,19 +757,99 @@ footer a{
 
 
 
+
+
 @media screen and (max-width: 950px){
+    .conteinerContacto{
+        justify-items: center;
+        padding-bottom: 100px;
+    }
+    .conteinerform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        background-color: white;
+        
+    
+    }
+    .formulario{
+        width: 80%;
+        background-color:#fff1d7;
+        border-radius: 50px;
+    }
+    .conteinerRedes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .conteinerContacto,
     .ubicacion{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        
     }
-  
-  
 }
+@media screen and (max-width: 430px){
+    .ubicacion article iframe{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 400px){
+    .conteinerContacto{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .tituloContacto{
+        width: 100%;
+        font-size: 28px;
+    }
+    .conteinerform{
+        width: 100%;
+        margin-left: 0;
+    }
+    .formulario{
+        width: 100%;
+    }
+    
+    .conteinerRedes h2{
+        width: 80%;
+        font-size: 16px;
+
+    }
+    .conteinerRedes h3{
+        width: 70%;
+        font-size: 15px;
+
+    }
+    .conteinerRedes{
+        width: 70;
+    }
+
+}
+@media screen and (max-width: 330px){
+    .conteinerRedes div{
+        width: 70%;
+    }
+    .conteinerRedes div p{
+        font-size: 12px;
+    }
+    .ubicacionTextos h3,
+    .ubicacionTextos h2{
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
 
 /* ---------MEDIA QUERIES SOBRE NOSOTROS ---------- */
 
