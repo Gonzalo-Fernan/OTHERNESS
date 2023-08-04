@@ -666,6 +666,9 @@ footer a{
         width: 100%;
         text-align: center;
     }
+    .textos article{
+        width: 50%;
+    }
     .textoIzquierda,
     .textoIzquierdaGaleria{
         font-size: 26px;
