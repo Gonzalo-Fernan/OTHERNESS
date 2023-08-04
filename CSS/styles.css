@@ -742,9 +742,11 @@ footer a{
     }
 
     .offcanvas{
+        background: linear-gradient(#f1d8a1, #523904);
         display: flex;
         transition: 0.5s;
-        background-color: #ffd783;
+        /* background: linear-gradient(to right, #e6c888, #725923); */
+        /* background-color: #ffd783; */
     }
     .offcanvas-title{
         font-weight: bolder;
@@ -754,11 +756,12 @@ footer a{
         height: 30%;
         margin-left: 25%;
         width: 50%;
-        background-color: #c7b07f;
+        background-color: #c7b07f; 
         font-weight: bolder;
         border: none;
     } 
     .btn-primary:hover{
+        
         background-color: #94722a;
         width: 100%;
         transition: all .5s ;
@@ -766,8 +769,10 @@ footer a{
     }
   
     .offcanvas-body{
+        
         display: flex;
         flex-direction: column;
+
     }
     .offcanvas-body a{
         text-decoration: none;
@@ -775,9 +780,11 @@ footer a{
         font-size: 25px;
     }
     .offcanvas-body a:hover{
-        background-color: #ddab40;
+        background-color:  #e6c888;
         color: white;
         scale: 1.05;
+        border-radius: 5px;
+
     }
 } 
 
