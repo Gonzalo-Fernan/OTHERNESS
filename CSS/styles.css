@@ -851,6 +851,15 @@ footer a{
     }
     
 }
+@media screen and (max-width: 500px){
+    .conteinerform{
+        width: 100%;
+        margin-left: 0;
+    }
+    .formulario{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 400px){
     .conteinerContacto{
         width: 100%;
@@ -861,14 +870,6 @@ footer a{
         width: 100%;
         font-size: 28px;
     }
-    .conteinerform{
-        width: 100%;
-        margin-left: 0;
-    }
-    .formulario{
-        width: 100%;
-    }
-    
     .conteinerRedes h2{
         width: 80%;
         font-size: 16px;
