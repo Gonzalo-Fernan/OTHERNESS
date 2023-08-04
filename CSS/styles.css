@@ -175,8 +175,9 @@ main{
 /*  ----------INDEX MAIN SECTION TEXTOS---------- */
 
 .textos{
+    width: 100%;
     display: flex;
-    gap: 10%;
+    gap: 5%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -186,13 +187,14 @@ main{
     font-size: 22px;
 }
 .textos article p{
-    padding-left: 20%;
-    width: 200px;
     font-size: 12px;
 }
 .textos article img{
     width: 80px;
     height: 80px;
+}
+.textos article{
+    width: 26%;
 }
 
 
@@ -662,7 +664,7 @@ footer a{
         align-items: center;
         justify-content: center;
         width: 100%;
-
+        text-align: center;
     }
     .textoIzquierda,
     .textoIzquierdaGaleria{
@@ -672,6 +674,8 @@ footer a{
     .textoIzquierdaDescripcionGaleria{
         font-size: 18px;
     }
+
+
   
 }
 
