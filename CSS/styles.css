@@ -179,7 +179,8 @@ main{
     gap: 10%;
     align-items: center;
     text-align: center;
-    margin: 10% 10% 10% 20%;
+    justify-content: center;
+    margin: 10% 0 10% 0; 
 }
 .textos article h3{
     font-size: 22px;
@@ -190,8 +191,8 @@ main{
     font-size: 12px;
 }
 .textos article img{
- width: 80px;
- height: 80px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -202,7 +203,6 @@ main{
     display: grid;
     grid-template-columns: 50% 50%;
     background: linear-gradient(to left,white,#ffd783);
-    /* background-color: #ffd783; */
     height: 100%;
     text-align: center;
     padding-top: 30px;
@@ -289,7 +289,7 @@ main{
 }
 .cursos p{
     font-size: 12px;
-    padding: 5px 0px 0px 0px;
+    padding: 5px 10px 0px 10px;
 }
 .botonCursos{
     cursor: pointer;
@@ -621,7 +621,6 @@ footer{
     width: 100%;
     height: 200px;
     background: linear-gradient(to right,white,#ffd783);
-    /* background-color: #ffd783; */
     font-family: montserrat, sans-serif;
 }
 footer h4{
@@ -657,13 +656,12 @@ footer a{
 
 /* ---------MEDIA QUERIES INDEX---------- */
 
-
- @media  screen and (max-width: 1225px) {
-    
- }
  @media  screen and (max-width: 1072px){
     .textos{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 
     }
     .textoIzquierda,
@@ -674,6 +672,7 @@ footer a{
     .textoIzquierdaDescripcionGaleria{
         font-size: 18px;
     }
+  
 }
 
 @media screen and (max-width: 700px){
@@ -766,6 +765,7 @@ footer a{
     .offcanvas-body a{
         text-decoration: none;
         color: #000;
+        font-size: 25px;
     }
     .offcanvas-body a:hover{
         background-color: #ddab40;
@@ -777,6 +777,7 @@ footer a{
 
 /* ---------MEDIA QUERIES CURSOS---------- */
 
+
 @media  screen and (max-width: 707px) {
     .conteinerCursos{
         grid-template-columns: 80%;
@@ -787,8 +788,6 @@ footer a{
 }
 
 /* ---------MEDIA QUERIES CONTACTO---------- */
-
-
 
 
 
@@ -836,8 +835,12 @@ footer a{
         width: 400px;
         height: 300px;
     }
+    .botonFormulario{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 430px){
+   
     .ubicacion article iframe{
         width: 200px;
         height: 200px;
