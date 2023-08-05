@@ -742,7 +742,7 @@ footer a{
     }
 
     .offcanvas{
-        background: linear-gradient(#f1d8a1, #523904);
+        background: linear-gradient(#ffffff, #ffd783, #f3cb76);
         display: flex;
         transition: 0.5s;
         /* background: linear-gradient(to right, #e6c888, #725923); */
