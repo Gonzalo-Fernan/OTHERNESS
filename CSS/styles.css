@@ -114,7 +114,8 @@ ul li{
 ul li a{
     padding: 0px 20px 0px 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(49, 45, 45);
+    font-weight: bold;
 }
 ul hr{
     border: none;
@@ -140,6 +141,7 @@ main{
     width: 90%;
     padding: 5%;
 }
+
 .textoIzquierda{
     width: 100%;
     font-size: 50px;
@@ -161,6 +163,10 @@ main{
     border-radius: 15px;
     box-shadow: 3px 3px 10px #444444;
     color: rgb(255, 255, 255);
+}
+.BotonGaleria:hover,
+.Boton:hover{
+    scale: 1.2;
 }
 .imagenAula {
 
@@ -307,6 +313,9 @@ main{
     box-shadow: 3px 3px 10px #c0a261;
     color: rgb(255, 255, 255);
 }
+.botonCursos:hover{
+    scale: 1.1;
+}
 
 
 
@@ -342,9 +351,9 @@ article form p{
 }
 
 .conteinerRedes{
-    margin-top: 4%;
-    width: 450px;
-    height: 300px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     
 }
@@ -374,7 +383,7 @@ article form p{
     text-align: left;
     width: 260px;
     height: 30px;
-    background-color: #fff1d7;
+    background-color: #fff1d7; 
     border-radius: 10px;    
 }
 .formulario input{
@@ -677,9 +686,6 @@ footer a{
     .textoIzquierdaDescripcionGaleria{
         font-size: 18px;
     }
-
-
-  
 }
 
 @media screen and (max-width: 700px){
@@ -687,33 +693,28 @@ footer a{
     .mainSectionGaleria{
         grid-template-columns: 100%;
         width: 100%;
+        
     }
-    .textoIzquierda,
-    .textoIzquierdaGaleria{
-        width: 90%;
-        margin: 0;
+    .mainSection div,
+    .mainSectionGaleria div{
+        margin-top: 25px;
         padding: 5px;
-        font-size: 22px;
+        justify-self: center;
+        margin-bottom: 25px;
+        text-align: center;
+
     }
-    .textoIzquierdaDescripcion,
-    .textoIzquierdaDescripcionGaleria{
-        width: 90%;
-        margin: 0;
-        padding: 5px;
-        font-size: 18px;
-    }
-    .textoIzquierdaGaleria,
-    .textoIzquierdaDescripcionGaleria{
-        margin-left: 5%;
+    .mainSection div p,
+    .mainSectionGaleria div p{
+        text-align: center;
+        padding: 5px 15px 5px 15px;
+        width: 100%;
     }
     .imagenAula,
     .imagenEspacio{
         width: 100%;
         padding: 0;
         margin: 0;
-    }
-    .mainSectionGaleria div{
-        margin-bottom: 50px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -745,8 +746,6 @@ footer a{
         background: linear-gradient(#ffffff, #ffd783, #f3cb76);
         display: flex;
         transition: 0.5s;
-        /* background: linear-gradient(to right, #e6c888, #725923); */
-        /* background-color: #ffd783; */
     }
     .offcanvas-title{
         font-weight: bolder;
