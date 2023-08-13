@@ -1,0 +1,93 @@
+/* -------------SOBRE NOSOTROS---------- */
+
+.conteinerSobreNosotros{
+    display: flex;
+    width: 100%;
+}
+
+.SobreNosotros{
+    margin-top: 50px;
+    text-align: center;
+}
+.SobreNosotros h1{
+    font-size: 50px;
+}
+.SobreNosotros img{
+    margin-top: 80px;
+    object-fit: cover;
+    width: 60%;
+    height: 300px;
+}
+
+.SobreNosotros p{
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 50px;
+    width: 60%;   
+}
+.conteinerGaleria{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    margin-top: 150px;
+    text-align: center;
+    background-color: #fff1d7;
+    height: 800px;
+}
+.CarruselImagenes{
+    background-color: #fff1d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+}
+.CarruselImagenes h2{
+    margin-top: 50px;
+    font-weight: bolder;
+}
+.CarruselImagenes p{
+    margin-bottom: 50px;
+}
+
+
+
+/*---------Bootstrap Carrursel-------*/
+.CarruselImagenes{
+    width: 100%;
+}
+.carouselExample{
+    margin: 0%;
+}
+.carousel{
+    margin-bottom: -200px;
+    width: 100%;
+    height: 850px;
+
+}
+.carousel-inner{
+    margin: 0%;
+    margin-left: 20%;
+    height: 80%;
+    width: 80%;
+}
+.carousel-item{
+    width: 80%;
+    height: 1500px;
+}
+.d-block{
+object-fit: cover;
+width: 100%;
+height: 80%;
+}
+.carousel-control-next{
+    right: 16%;
+    height: 80%;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover{
+    color: white;
+    scale: 1.4;
+}
+.carousel-control-prev{
+    left: 20%;
+    height: 80%;
+}

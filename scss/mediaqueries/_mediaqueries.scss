@@ -1,0 +1,347 @@
+/* ---------MEDIA QUERIES---------- */
+
+/* ---------MEDIA QUERIES Navbar---------- */
+
+@media screen and (max-width: 400px){
+    .navBar div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navBar div h2{
+        margin: 0;
+    }
+}
+
+/* ---------MEDIA QUERIES INDEX---------- */
+
+ @media  screen and (max-width: 1072px){
+    .textos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .textos article{
+        width: 50%;
+    }
+    .textoIzquierda,
+    .textoIzquierdaGaleria{
+        font-size: 26px;
+    }
+    .textoIzquierdaDescripcion,
+    .textoIzquierdaDescripcionGaleria{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .mainSection,
+    .mainSectionGaleria{
+        grid-template-columns: 100%;
+        width: 100%;
+        
+    }
+    .mainSection div,
+    .mainSectionGaleria div{
+        margin-top: 25px;
+        padding: 5px;
+        justify-self: center;
+        margin-bottom: 25px;
+        text-align: center;
+
+    }
+    .mainSection div p,
+    .mainSectionGaleria div p{
+        text-align: center;
+        padding: 5px 15px 5px 15px;
+        width: 100%;
+    }
+    .imagenAula,
+    .imagenEspacio{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .textoIzquierda,
+    .textoIzquierdaGaleria{
+        font-size: 18px;
+    }
+    .textoIzquierdaDescripcion,
+    .textoIzquierdaDescripcionGaleria{
+        font-size: 16px;      
+    }
+}
+
+
+/* ---------MEDIA QUERIES Menu offcanvas Boostrap---------- */
+
+
+
+ @media screen and (max-width: 970px){
+
+    .nav-links{
+       display: none;
+    }
+    .navBar{
+        display: flex;
+    }
+
+    .offcanvas{
+        background: linear-gradient(#ffffff, #ffd783, #f3cb76);
+        display: flex;
+        transition: 0.5s;
+    }
+    .offcanvas-title{
+        font-weight: bolder;
+    }
+     .btn-primary{
+        display: block;
+        height: 30%;
+        margin-left: 25%;
+        width: 50%;
+        background-color: #c7b07f; 
+        font-weight: bolder;
+        border: none;
+    } 
+    .btn-primary:hover{
+        
+        background-color: #94722a;
+        width: 100%;
+        transition: all .5s ;
+        margin-left: 0;
+    }
+  
+    .offcanvas-body{
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+    .offcanvas-body a{
+        text-decoration: none;
+        color: #000;
+        font-size: 25px;
+    }
+    .offcanvas-body a:hover{
+        background-color:  #e6c888;
+        color: white;
+        scale: 1.05;
+        border-radius: 5px;
+
+    }
+} 
+
+
+/* ---------MEDIA QUERIES CURSOS---------- */
+
+
+@media  screen and (max-width: 707px) {
+    .conteinerCursos{
+        grid-template-columns: 80%;
+        gap: 50px
+    }
+
+
+}
+
+/* ---------MEDIA QUERIES CONTACTO---------- */
+
+
+
+@media screen and (max-width: 1100px){
+    .conteinerContacto{
+        justify-items: center;
+        padding-bottom: 100px;
+      
+    }
+    .conteinerform{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+       
+    }
+    .ubicacion article img{
+        width: 60%;
+    }
+    .formulario{
+        width: 80%;
+        border-radius: 50px;
+    }
+    .conteinerRedes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .conteinerContacto,
+    .ubicacion{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 620px){
+    .ubicacion article iframe:hover{
+        width: 400px;
+        height: 300px;
+    }
+    .botonFormulario{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 430px){
+   
+    .ubicacion article iframe{
+        width: 200px;
+        height: 200px;
+    }
+    .ubicacion article iframe:hover{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .conteinerform{
+        width: 100%;
+        margin-left: 0;
+    }
+    .formulario{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    .conteinerContacto{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .tituloContacto{
+        width: 100%;
+        font-size: 28px;
+    }
+    .conteinerRedes h2{
+        width: 80%;
+        font-size: 16px;
+
+    }
+    .conteinerRedes h3{
+        width: 70%;
+        font-size: 15px;
+
+    }
+    .conteinerRedes{
+        width: 70;
+    }
+
+}
+@media screen and (max-width: 330px){
+    .conteinerRedes div{
+        width: 70%;
+    }
+    .conteinerRedes div p{
+        font-size: 12px;
+    }
+    .ubicacionTextos h3,
+    .ubicacionTextos h2{
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+
+/* ---------MEDIA QUERIES SOBRE NOSOTROS ---------- */
+
+@media screen and (max-width: 900x){
+   .SobreNosotros p{
+    width: 80%;
+    font-size: 16px;
+   }
+  
+}
+@media screen and (max-width: 700px) {
+    .SobreNosotros p{
+        width: 90%;
+        font-size: 16px;
+        margin: 10px 5% 10px 5%;
+   }
+}
+@media screen and (max-width: 500px){
+    .SobreNosotros img{
+        width: 100%;
+    }
+    .carousel-inner{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+    .carousel-item{
+        width: 100%;
+    }
+}
+
+/* ---------MEDIA QUERIES TESTIMONIOS---------- */
+
+@media screen and (max-width: 745px){
+    .cards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+        margin-top: 20px;
+    }
+    .cards div{
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+        
+    } 
+    .cards div p{
+        width: 100%;
+    }
+    .card-fondo{
+        background-color: #fff1d7;
+    }
+    .imagenTestimonio{
+        margin-top: 10px;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
+    .conteinerTestimonios p{
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+   
+    
+    
+}
+@media screen and (max-width: 745px){
+    .tituloTestimonios{
+        font-size: 35px;
+    }
+    .conteinerTestimonios article h3{
+        font-size: 22px;
+    }
+    .conteinerTestimonios article p{
+        font-size: 13px;
+    }
+    
+}

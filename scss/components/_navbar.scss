@@ -1,0 +1,74 @@
+/* ----------INDEX NAVBAR----------*/
+header{
+    position: relative;
+}
+.navBar{
+    width: 100%;
+    height: 120px;
+    background: $fondo-left;
+    font-family: montserrat, sans-serif;
+    display: flex;
+}
+.navBar div{
+    display: flex;
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+}
+.Logo{
+    cursor: pointer;
+    margin-top: 0.5%;
+    padding: 0;
+    height: 80%;
+}
+.Logo:hover{
+    scale: 1.1;
+}
+.navBar h3{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.navBar h3:hover{
+    font-size: 30px;
+    color: #94722a;
+}
+.navBar a{
+    text-decoration: none;
+}
+
+.navBar h2{
+    padding-left: 5px;
+    margin-top: 63px;
+    font-size: 10px;
+}
+.nav-links {
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    font-family: montserrat, sans-serif;
+    color: black;
+    justify-content: end;
+    flex-grow: 4;
+
+}
+ul li{
+    list-style-type: none;
+}
+.navBar ul li:hover{
+    scale: 1.2;
+}
+ul li a{
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    color: rgb(49, 45, 45);
+    font-weight: bold;
+}
+ul hr{
+    border: none;
+    width: 1px;
+    border-left: 2px solid #aa671d;
+    height: 20px;
+} 
