@@ -1,4 +1,5 @@
 * {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: montserrat;
@@ -6,6 +7,12 @@
 
 body {
   background: linear-gradient(to right, white, #ffd783);
+}
+
+main {
+  width: 100%;
+  font-family: monstserrat, verdana;
+  position: relative;
 }
 
 /* ----------INDEX NAVBAR----------*/
@@ -163,12 +170,6 @@ footer a {
 }
 
 /* ----------INDEX MAIN SECTION---------- */
-main {
-  width: 100%;
-  font-family: montserrat, sans-serif;
-  position: relative;
-}
-
 .mainSection {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -200,7 +201,7 @@ main {
   margin-top: 10%;
   left: 10%;
   cursor: pointer;
-  font-family: montserrat, sans-serif;
+  font-family: monstserrat, verdana;
   height: 50px;
   width: 150px;
   border: none;
@@ -322,7 +323,7 @@ main {
 .BotonGaleria {
   cursor: pointer;
   margin-top: 3%;
-  font-family: montserrat, sans-serif;
+  font-family: monstserrat, verdana;
   height: 50px;
   width: 120px;
   border: none;
@@ -375,7 +376,7 @@ main {
 
 .botonCursos {
   cursor: pointer;
-  font-family: montserrat, sans-serif;
+  font-family: monstserrat, verdana;
   font-size: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -700,7 +701,7 @@ article form p {
 }
 
 .cards div p {
-  font-family: montserrat, sans-serif;
+  font-family: monstserrat, verdana;
   margin-top: 20px;
   width: 90%;
 }

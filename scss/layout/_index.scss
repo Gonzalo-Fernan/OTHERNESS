@@ -43,11 +43,6 @@
 
 /* ----------INDEX MAIN SECTION---------- */
 
-main{
-    width: 100%;
-    font-family: montserrat,sans-serif;
-    position: relative;
-}
 
 .mainSection { 
     display: grid;
@@ -91,7 +86,7 @@ main{
     margin-top: 10%;
     left: 10%;
     cursor: pointer;
-    font-family: montserrat, sans-serif;
+    font-family: $fuente;
     height: 50px;
     width: 150px;
     border: none;
@@ -276,7 +271,7 @@ main{
 .BotonGaleria{
     cursor: pointer;
     margin-top: 3%;
-    font-family: montserrat, sans-serif;
+    font-family: $fuente;
     height: 50px;
     width: 120px;
     border: none;

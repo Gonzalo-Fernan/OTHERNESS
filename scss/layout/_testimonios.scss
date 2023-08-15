@@ -1,9 +1,8 @@
 /*  -------------TESTIMONIOS ------------- */
 
-.conteinerTestimonios{
-    
+.conteinerTestimonios{  
     text-align: center;
-    background: linear-gradient(to right, white, #ffd783 );
+    background: $fondo-right;
 }
 .tituloTestimonios{
     
@@ -41,7 +40,7 @@
     
 } 
 .cards div p{
-    font-family: montserrat, sans-serif;
+    font-family: $fuente;
     margin-top: 20px;
     width: 90%;
 }
