@@ -62,6 +62,32 @@ header {
   text-decoration: none;
 }
 
+.navBar div {
+  animation-name: titulo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+}
+
+@keyframes titulo {
+  0% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 2%;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 2%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
 .navBar h2 {
   padding-left: 5px;
   margin-top: 63px;
