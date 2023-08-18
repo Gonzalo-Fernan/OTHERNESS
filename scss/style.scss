@@ -2,6 +2,7 @@
 //base
 @import "base/variables";
 @import "base/reset";
+@import "base/utilidades";
 
 
 //components
@@ -9,12 +10,14 @@
 @import "components/footer";
 
 //layout
+
 @import "layout/index";
 @import "layout/cursos";
 @import "layout/contacto";
 @import "layout/sobre-nosotros";
 @import "layout/testimonios";
 @import "layout/mediaqueries";
+
 
 
 

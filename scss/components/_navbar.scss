@@ -1,18 +1,45 @@
-/* ----------INDEX NAVBAR----------*/
+
 header{
     position: relative;
 }
 .navBar{
     width: 100%;
     height: 120px;
-    background: $fondo-left;
+    background: linear-gradient(to left, white,#ffd783);
     font-family: montserrat, sans-serif;
     display: flex;
+    .nav-links {
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 50px;
+        display: flex;
+        font-family: montserrat, sans-serif;
+        color: black;
+        justify-content: end;
+        flex-grow: 4;
+    
+    }
 }
 .navBar div{
     display: flex;
     font-family: montserrat, sans-serif;
     font-weight: bolder;
+    animation-name: titulo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    h2{
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-left: 40px;
+        &:hover{
+            font-size: 35px;
+            color: #94722a;
+        }
+    }
 }
 .Logo{
     cursor: pointer;
@@ -22,66 +49,17 @@ header{
 }
 .Logo:hover{
     scale: 1.1;
-}
-.navBar h3{
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 50px;
-    margin-left: 40px;
-}
-.navBar h3:hover{
-    font-size: 30px;
-    color: #94722a;
-}
+    }
 .navBar a{
     text-decoration: none;
 }
-.navBar div{
-    animation-name: titulo;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 3;
- }
- @keyframes titulo {
-    0%{
-        transform: scale(1);
-        opacity: 100%;
-     }
-    25%{
-        transform: scale(1.2);
-        opacity: 2%;
-     }
-    25%{
-         transform: scale(1.2);
-         opacity: 2%;
-     }
-    100%{
-        transform: scale(1);
-        opacity: 100%;
-     }
 
-}
-
-// }
-
-.navBar h2{
+.navBar div h3{
     padding-left: 5px;
     margin-top: 63px;
     font-size: 10px;
 }
-.nav-links {
-    align-items: center;
-    margin-right: 50px;
-    margin-top: 50px;
-    display: flex;
-    font-family: montserrat, sans-serif;
-    color: black;
-    justify-content: end;
-    flex-grow: 4;
 
-}
 ul li{
     list-style-type: none;
 }
