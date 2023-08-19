@@ -1,6 +1,6 @@
 /*  -------------TESTIMONIOS ------------- */
 .tituloTestimonios{
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     margin-top: 50px;
 }
@@ -8,6 +8,7 @@
     text-align: center;
     background: $fondo-right;
     h3{
+        font-weight: bolder;
         margin-top: 75px;
     }
     p{
@@ -35,10 +36,16 @@
         text-align: center;
         width: 55%;
     } 
+    h2{
+        font-family: $fuente;
+        font-weight: bolder;
+    }
     p{
+        font-size: 1rem;
         font-family: $fuente;
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
+        padding-left: 10px;
     }
     .imagenTestimonio{
         margin-top: 50px;

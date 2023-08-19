@@ -56,18 +56,18 @@ main{
     }
     .textoIzquierda{
         width: 100%;
-        font-size: 50px;
+        font-size: 3rem;
         text-align: left;
     }
     .textoIzquierdaDescripcion{
         width: 100%;
-        font-size: 20px;
+        font-size: 1.5rem;
         text-align: left;
     }
     .Boton{
         margin-top: 10%;
         cursor: pointer;
-        font-family: montserrat, sans-serif;
+        font-family: $fuente;
         height: 50px;
         width: 150px;
         border: none;
@@ -116,10 +116,10 @@ main{
             animation-iteration-count: infinite;
         }
         h3{
-            font-size: 22px;
+            font-size: 1.5rem;
         }
         p{
-            font-size: 12px;
+            font-size: 0.8rem;
         }
     }
 }
@@ -142,7 +142,7 @@ main{
         margin-top: 2%;
         width: 100%;
         .textoIzquierdaGaleria{
-            font-size: 50px;
+            font-size: 3rem;
             text-align: left;
             width: 90%;
             padding: 5%;
@@ -150,7 +150,7 @@ main{
         .textoIzquierdaDescripcionGaleria{
             text-align: left;
             padding: 5%;
-            font-size: 25px;
+            font-size: 1.5rem;
             width: 90%;
         }
     
@@ -165,7 +165,7 @@ main{
     .BotonGaleria{
         margin-top: 3%;
         cursor: pointer;
-        font-family: montserrat, sans-serif;
+        font-family: $fuente;
         height: 50px;
         width: 120px;
         border: none;
