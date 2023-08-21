@@ -8,6 +8,41 @@ header{
     background: linear-gradient(to left, white,#ffd783);
     font-family: montserrat, sans-serif;
     display: flex;
+    div{
+        display: flex;
+        font-family: montserrat, sans-serif;
+        font-weight: bolder;
+        animation-name: titulo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 2;
+        h2{
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 50px;
+            margin-left: 40px;
+            &:hover{
+                font-size: 35px;
+                color: #94722a;
+            }
+        }
+        h3{
+            padding-left: 5px;
+            margin-top: 63px;
+            font-size: 10px;
+        }
+    }
+    .Logo{
+        cursor: pointer;
+        margin-top: 0.5%;
+        padding: 0;
+        height: 80%;
+        &:hover{
+            scale: 1.1;
+            }
+    }
     .nav-links {
         align-items: center;
         margin-right: 50px;
@@ -17,64 +52,34 @@ header{
         color: black;
         justify-content: end;
         flex-grow: 4;
-    
     }
-}
-.navBar div{
-    display: flex;
-    font-family: montserrat, sans-serif;
-    font-weight: bolder;
-    animation-name: titulo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 2;
-    h2{
-        color: #000;
+    h1{
+        display: none;
+    }
+    a{
         text-decoration: none;
-        cursor: pointer;
-        margin-top: 50px;
-        margin-left: 40px;
-        &:hover{
-            font-size: 35px;
-            color: #94722a;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            &:hover{
+                scale: 1.2;
+            }
+            a{
+                padding: 0px 20px 0px 20px;
+                text-decoration: none;
+                color: rgb(49, 45, 45);
+                font-weight: bold;
+            }
         }
-    }
-}
-.Logo{
-    cursor: pointer;
-    margin-top: 0.5%;
-    padding: 0;
-    height: 80%;
-}
-.Logo:hover{
-    scale: 1.1;
-    }
-.navBar a{
-    text-decoration: none;
+        hr{
+            border: none;
+            width: 1px;
+            border-left: 2px solid #aa671d;
+            height: 20px;
+        }  
+    } 
 }
 
-.navBar div h3{
-    padding-left: 5px;
-    margin-top: 63px;
-    font-size: 10px;
-}
 
-ul li{
-    list-style-type: none;
-}
-.navBar ul li:hover{
-    scale: 1.2;
-}
-ul li a{
-    padding: 0px 20px 0px 20px;
-    text-decoration: none;
-    color: rgb(49, 45, 45);
-    font-weight: bold;
-}
-ul hr{
-    border: none;
-    width: 1px;
-    border-left: 2px solid #aa671d;
-    height: 20px;
-} 
+

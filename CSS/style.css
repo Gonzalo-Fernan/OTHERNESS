@@ -67,17 +67,6 @@ header {
   font-family: montserrat, sans-serif;
   display: flex;
 }
-.navBar .nav-links {
-  align-items: center;
-  margin-right: 50px;
-  margin-top: 50px;
-  display: flex;
-  font-family: montserrat, sans-serif;
-  color: black;
-  justify-content: end;
-  flex-grow: 4;
-}
-
 .navBar div {
   display: flex;
   font-family: montserrat, sans-serif;
@@ -99,44 +88,49 @@ header {
   font-size: 35px;
   color: #94722a;
 }
-
-.Logo {
-  cursor: pointer;
-  margin-top: 0.5%;
-  padding: 0;
-  height: 80%;
-}
-
-.Logo:hover {
-  scale: 1.1;
-}
-
-.navBar a {
-  text-decoration: none;
-}
-
 .navBar div h3 {
   padding-left: 5px;
   margin-top: 63px;
   font-size: 10px;
 }
-
-ul li {
+.navBar .Logo {
+  cursor: pointer;
+  margin-top: 0.5%;
+  padding: 0;
+  height: 80%;
+}
+.navBar .Logo:hover {
+  scale: 1.1;
+}
+.navBar .nav-links {
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 50px;
+  display: flex;
+  font-family: montserrat, sans-serif;
+  color: black;
+  justify-content: end;
+  flex-grow: 4;
+}
+.navBar h1 {
+  display: none;
+}
+.navBar a {
+  text-decoration: none;
+}
+.navBar ul li {
   list-style-type: none;
 }
-
 .navBar ul li:hover {
   scale: 1.2;
 }
-
-ul li a {
+.navBar ul li a {
   padding: 0px 20px 0px 20px;
   text-decoration: none;
   color: rgb(49, 45, 45);
   font-weight: bold;
 }
-
-ul hr {
+.navBar ul hr {
   border: none;
   width: 1px;
   border-left: 2px solid #aa671d;
@@ -151,18 +145,15 @@ footer {
   background: linear-gradient(to right, white, #ffd783);
   font-family: montserrat, sans-serif;
 }
-
 footer h4 {
   cursor: pointer;
   padding-top: 50px;
 }
-
 footer hr {
   width: 30%;
   margin-left: 35%;
   border-top: 2px solid #cfab5b;
 }
-
 footer a {
   text-decoration: none;
   color: #000;
