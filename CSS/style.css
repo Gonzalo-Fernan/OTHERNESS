@@ -203,28 +203,28 @@ main {
   font-family: montserrat, sans-serif;
 }
 
-.mainSection {
+.mainSection, .mainSectionGaleria {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100%;
   text-align: center;
 }
-.mainSection div {
+.mainSection div, .mainSectionGaleria div {
   margin-top: 2%;
   width: 90%;
   padding: 5%;
 }
-.mainSection .textoIzquierda {
+.mainSection .textoIzquierda, .mainSectionGaleria .textoIzquierda {
   width: 100%;
   font-size: 3rem;
   text-align: left;
 }
-.mainSection .textoIzquierdaDescripcion {
+.mainSection .textoIzquierdaDescripcion, .mainSectionGaleria .textoIzquierdaDescripcion {
   width: 100%;
   font-size: 1.5rem;
   text-align: left;
 }
-.mainSection .Boton {
+.mainSection .Boton, .mainSectionGaleria .Boton {
   margin-top: 10%;
   cursor: pointer;
   font-family: monstserrat, verdana;
@@ -236,10 +236,10 @@ main {
   box-shadow: 3px 3px 10px #444444;
   color: rgb(255, 255, 255);
 }
-.mainSection .Boton:hover {
+.mainSection .Boton:hover, .mainSectionGaleria .Boton:hover {
   scale: 1.2;
 }
-.mainSection .imagenAula {
+.mainSection .imagenAula, .mainSectionGaleria .imagenAula {
   width: 90%;
   margin-top: 3%;
   object-fit: cover;
@@ -277,13 +277,7 @@ main {
 
 /*  ----------INDEX MAIN SECTION GALERIA---------- */
 .mainSectionGaleria {
-  display: grid;
-  grid-template-columns: 50% 50%;
   background: linear-gradient(to left, white, #ffd783);
-  height: 100%;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .mainSectionGaleria div {
   margin-top: 2%;
@@ -403,7 +397,6 @@ main {
   width: 70%;
   height: 100%;
   background: linear-gradient(to left, #ffe5ae, #ffd783);
-  background-color: #ffd783;
   border-radius: 15%;
 }
 .conteinerContacto .conteinerform .formulario input {
@@ -677,10 +670,10 @@ main {
 }
 /* ---------MEDIA QUERIES INDEX---------- */
 @media screen and (max-width: 1072px) {
-  .mainSection .textoIzquierda {
+  .mainSection .textoIzquierda, .mainSectionGaleria .textoIzquierda {
     font-size: 26px;
   }
-  .mainSection .textoIzquierdaDescripcion {
+  .mainSection .textoIzquierdaDescripcion, .mainSectionGaleria .textoIzquierdaDescripcion {
     font-size: 18px;
   }
   .mainSectionGaleria div .textoIzquierdaGaleria {
@@ -701,11 +694,11 @@ main {
   }
 }
 @media screen and (max-width: 700px) {
-  .mainSection {
+  .mainSection, .mainSectionGaleria {
     grid-template-columns: 100%;
     width: 100%;
   }
-  .mainSection div {
+  .mainSection div, .mainSectionGaleria div {
     margin-top: 25px;
     padding: 5px;
     justify-self: center;
@@ -713,11 +706,13 @@ main {
     text-align: center;
     justify-content: center;
   }
-  .mainSection div p {
+  .mainSection div .textoIzquierda, .mainSectionGaleria div .textoIzquierda {
     text-align: center;
-    width: 100%;
   }
-  .mainSection .imagenAula {
+  .mainSection div .textoIzquierdaDescripcion, .mainSectionGaleria div .textoIzquierdaDescripcion {
+    text-align: center;
+  }
+  .mainSection .imagenAula, .mainSectionGaleria .imagenAula {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -728,15 +723,15 @@ main {
   }
   .mainSectionGaleria div {
     margin-top: 25px;
-    padding: 5px;
-    justify-self: center;
     margin-bottom: 25px;
-    text-align: center;
   }
-  .mainSectionGaleria p {
+  .mainSectionGaleria div .textoIzquierdaGaleria {
     text-align: center;
-    padding: 5px 15px 5px 15px;
-    width: 100%;
+    margin: 0;
+  }
+  .mainSectionGaleria div .textoIzquierdaDescripcionGaleria {
+    text-align: center;
+    margin: 0;
   }
   .mainSectionGaleria .imagenEspacio {
     width: 100%;
@@ -745,10 +740,10 @@ main {
   }
 }
 @media screen and (max-width: 400px) {
-  .mainSection .textoIzquierda {
+  .mainSection .textoIzquierda, .mainSectionGaleria .textoIzquierda {
     font-size: 18px;
   }
-  .mainSection .textoIzquierdaDescripcion {
+  .mainSection .textoIzquierdaDescripcion, .mainSectionGaleria .textoIzquierdaDescripcion {
     font-size: 16px;
   }
   .mainSectionGaleria div .textoIzquierdaGaleria {

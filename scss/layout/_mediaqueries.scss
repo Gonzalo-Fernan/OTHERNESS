@@ -58,11 +58,12 @@
             margin-bottom: 25px;
             text-align: center;
             justify-content: center;
-            p{
+            .textoIzquierda{
                 text-align: center;
-                width: 100%;
-                
-            } 
+            }
+            .textoIzquierdaDescripcion{
+                text-align: center;
+            }
         }
         .imagenAula{
             width: 100%;
@@ -75,15 +76,15 @@
         width: 100%;
         div{
             margin-top: 25px;
-            padding: 5px;
-            justify-self: center;
             margin-bottom: 25px;
-            text-align: center;
-        }
-        p{
-            text-align: center;
-            padding: 5px 15px 5px 15px;
-            width: 100%;
+            .textoIzquierdaGaleria{
+                text-align: center;
+                margin: 0;
+            }
+            .textoIzquierdaDescripcionGaleria{
+                text-align: center;
+                margin: 0;
+            }
         }
         .imagenEspacio{
             width: 100%;

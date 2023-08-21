@@ -131,13 +131,8 @@ main{
 /*  ----------INDEX MAIN SECTION GALERIA---------- */
 
 .mainSectionGaleria{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background: linear-gradient(to left,white,#ffd783);
-    height: 100%;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @extend .mainSection;
+    background: $fondo-left;
     div{
         margin-top: 2%;
         width: 100%;
