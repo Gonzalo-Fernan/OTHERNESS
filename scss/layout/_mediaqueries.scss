@@ -131,12 +131,13 @@
             font-weight: bolder;
         }
     }
-     .btn-primary{
+    .btn-primary{
         display: block;
         height: 30%;
         margin-left: 25%;
         width: 50%;
-        background-color: #c7b07f; 
+        background-color: #c7b07f;
+        font-size: 1.3rem; 
         font-weight: bolder;
         border: none;
         &:hover{
