@@ -41,3 +41,16 @@
         transform: translateY(0px);
     }
 }
+
+@mixin grid ($justify, $align){
+    display: grid;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex($direction, $justfy, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justfy;
+    align-items: $aling;
+}

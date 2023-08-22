@@ -5,13 +5,11 @@
     font-size: 50px;
 }
 .conteinerContacto{
-    display: grid;
+    @include grid(center, center);
     grid-template-columns: 40% 40%;
     width: 100%;
     height: 100%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     gap: 10%;
     .formulario p{
         font-weight: bold;
@@ -25,7 +23,7 @@
         border-radius: 15%;
         .formulario input{
             width: 80%;
-            font-family: montserrat, sans-serif;
+            font-family: $fuente;
             border-radius: 5px;
             padding: 5px 10px 5px 10px;
             margin: 15px 10px 5px 10px;
@@ -33,7 +31,7 @@
         }
         .formulario textarea{
             width: 80%;
-            font-family: montserrat, sans-serif;
+            font-family: $fuente;
             border-radius: 5px;
             padding: 5px 10px 5px 10px;
             margin: 15px 10px 5px 10px;
@@ -42,7 +40,7 @@
         .botonFormulario{
             margin-bottom: 10px;
             cursor: pointer;
-            font-family: montserrat, sans-serif;
+            font-family: $fuente;
             height: 40px;
             width: 25%;
             border: none;
@@ -50,6 +48,7 @@
             border-radius: 15px;
             box-shadow: 3px 3px 10px #444444;
             color: rgb(255, 255, 255);
+            transition: all .3s;
             &:hover{
                 scale: 1.1;
             }
@@ -64,16 +63,14 @@
     height: 100%;
     text-align: center;
     div{
+        @include flex(column 50% 50%, center, center);
         display: flex;
-        flex-direction: column 50% 50%;
         margin-top: 20px;
-        align-items: center;
-        justify-content: center;
-    
     }
     img{
         width: 30px;
         height: 30px;
+        transition: all .3s;
         &:hover{
             scale: 1.5;
         }
@@ -87,6 +84,7 @@
         height: 30px;
         background-color: #fff1d7; 
         border-radius: 10px;
+        transition: all .3s;
         &:hover{
             scale: 1.1;
         }
@@ -94,12 +92,10 @@
     
 }
 .ubicacion{
-    display: grid;
+    @include grid(center, center);
     grid-template-columns: 40% 40%;
     width: 100%;
-    background: linear-gradient(to left,white,#ffd783);
-    align-items: center;
-    justify-content: center;
+    background: $fondo-left;
     margin-top: 100px;
     height: 100%;
     padding-top: 50px;
@@ -110,12 +106,8 @@
         height: 100%;
     }
     .ubicacionTextos{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, center, center);
         text-align: center;
-        justify-content: center;
-        align-items: center;
-    
     }
     h2{
         font-size: 20px;
@@ -134,6 +126,7 @@
         width: 400px;
         height: 300px;
         border: none;
+        transition: all .3s;
         &:hover{
             width: 500px;
             height: 350px;

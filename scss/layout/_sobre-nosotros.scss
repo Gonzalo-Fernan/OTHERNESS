@@ -1,7 +1,7 @@
 /* -------------SOBRE NOSOTROS---------- */
 
 .conteinerSobreNosotros{
-    display: flex;
+    @include flex(row, center, center);
     width: 100%;
     .SobreNosotros{
         margin-top: 50px;
@@ -25,12 +25,13 @@
     }
 }
 
+/*---------Bootstrap Carrursel-------*/
+
 .CarruselImagenes{
-     background-color: #fff1d7;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     height: 1000px;
+    width: 100%;
+    background: $fondo-left;
+    @include flex(column, center, center);
+    height: 1000px;
     h2{
         font-size: 2.5rem;
         margin-top: 50px;
@@ -40,14 +41,6 @@
         margin-bottom: 50px;
         font-size: 1.3rem;
     }
-}
- 
-
-
-
-/*---------Bootstrap Carrursel-------*/
-.CarruselImagenes{
-    width: 100%;
     .carouselExample{
         margin: 0%;
     }

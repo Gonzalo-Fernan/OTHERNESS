@@ -205,9 +205,10 @@ main {
 
 .mainSection, .mainSectionGaleria {
   display: grid;
+  justify-content: center;
+  align-items: start;
   grid-template-columns: 50% 50%;
   height: 100%;
-  text-align: center;
 }
 .mainSection div, .mainSectionGaleria div {
   margin-top: 2%;
@@ -235,6 +236,7 @@ main {
   border-radius: 15px;
   box-shadow: 3px 3px 10px #444444;
   color: rgb(255, 255, 255);
+  transition: all 0.3s;
 }
 .mainSection .Boton:hover, .mainSectionGaleria .Boton:hover {
   scale: 1.2;
@@ -250,10 +252,11 @@ main {
 .textos {
   width: 100%;
   display: flex;
-  gap: 5%;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 5%;
+  text-align: center;
   margin: 10% 0 10% 0;
 }
 .textos article {
@@ -312,6 +315,7 @@ main {
   border-radius: 15px;
   box-shadow: 3px 3px 10px #444444;
   color: rgb(255, 255, 255);
+  transition: all 0.3s;
 }
 .mainSectionGaleria .BotonGaleria:hover {
   scale: 1.2;
@@ -325,13 +329,14 @@ main {
 }
 
 .conteinerCursos {
+  display: grid;
   justify-content: center;
+  align-items: center;
+  grid-template-columns: 30% 30%;
   margin: 80px 0px 500px 0px;
   text-align: center;
   width: 100%;
   gap: 10%;
-  display: grid;
-  grid-template-columns: 30% 30%;
   height: 100%;
 }
 .conteinerCursos .cursos {
@@ -366,6 +371,7 @@ main {
   border-radius: 25px;
   box-shadow: 3px 3px 10px #c0a261;
   color: rgb(255, 255, 255);
+  transition: all 0.3s;
 }
 .conteinerCursos .cursos .botonCursos:hover {
   scale: 1.1;
@@ -380,12 +386,12 @@ main {
 
 .conteinerContacto {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 40% 40%;
   width: 100%;
   height: 100%;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   gap: 10%;
 }
 .conteinerContacto .formulario p {
@@ -426,6 +432,7 @@ main {
   border-radius: 15px;
   box-shadow: 3px 3px 10px #444444;
   color: rgb(255, 255, 255);
+  transition: all 0.3s;
 }
 .conteinerContacto .conteinerform .botonFormulario:hover {
   scale: 1.1;
@@ -440,13 +447,15 @@ main {
 .conteinerRedes div {
   display: flex;
   flex-direction: column 50% 50%;
-  margin-top: 20px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
 }
 .conteinerRedes img {
   width: 30px;
   height: 30px;
+  transition: all 0.3s;
 }
 .conteinerRedes img:hover {
   scale: 1.5;
@@ -460,6 +469,7 @@ main {
   height: 30px;
   background-color: #fff1d7;
   border-radius: 10px;
+  transition: all 0.3s;
 }
 .conteinerRedes p:hover {
   scale: 1.1;
@@ -467,11 +477,11 @@ main {
 
 .ubicacion {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 40% 40%;
   width: 100%;
   background: linear-gradient(to left, white, #ffd783);
-  align-items: center;
-  justify-content: center;
   margin-top: 100px;
   height: 100%;
   padding-top: 50px;
@@ -485,9 +495,9 @@ main {
 .ubicacion .ubicacionTextos {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .ubicacion h2 {
   font-size: 20px;
@@ -506,6 +516,7 @@ main {
   width: 400px;
   height: 300px;
   border: none;
+  transition: all 0.3s;
 }
 .ubicacion iframe:hover {
   width: 500px;
@@ -515,6 +526,9 @@ main {
 /* -------------SOBRE NOSOTROS---------- */
 .conteinerSobreNosotros {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .conteinerSobreNosotros .SobreNosotros {
@@ -538,10 +552,13 @@ main {
   width: 60%;
 }
 
+/*---------Bootstrap Carrursel-------*/
 .CarruselImagenes {
-  background-color: #fff1d7;
+  width: 100%;
+  background: linear-gradient(to left, white, #ffd783);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 1000px;
 }
@@ -553,11 +570,6 @@ main {
 .CarruselImagenes p {
   margin-bottom: 50px;
   font-size: 1.3rem;
-}
-
-/*---------Bootstrap Carrursel-------*/
-.CarruselImagenes {
-  width: 100%;
 }
 .CarruselImagenes .carouselExample {
   margin: 0%;
@@ -622,15 +634,16 @@ main {
 
 .conteinerCards {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .conteinerCards .cards {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .conteinerCards div {
   margin-top: 50px;
@@ -670,6 +683,10 @@ main {
 }
 /* ---------MEDIA QUERIES INDEX---------- */
 @media screen and (max-width: 1072px) {
+  .mainSection, .mainSectionGaleria {
+    justify-content: start;
+    align-items: start;
+  }
   .mainSection .textoIzquierda, .mainSectionGaleria .textoIzquierda {
     font-size: 26px;
   }
@@ -968,32 +985,36 @@ main {
     width: 90%;
     margin-left: 5%;
   }
-  .cards {
-    width: 100%;
+  .conteinerCards .cards {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     height: 800px;
     margin-top: 20px;
   }
-  .cards div {
-    align-items: center;
+  .conteinerCards .cards div {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     padding-top: 0;
     text-align: center;
     width: 100%;
   }
-  .cards p {
+  .conteinerCards .cards p {
     padding: 15px;
     width: 100%;
   }
-  .cards .imagenTestimonio {
+  .conteinerCards .cards .imagenTestimonio {
     margin-top: 10px;
     object-fit: cover;
     width: 300px;
     height: 300px;
   }
-  .card-fondo {
+  .conteinerCards .card-fondo {
     background: linear-gradient(to left, white, #ffd783);
   }
 }

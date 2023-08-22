@@ -18,6 +18,8 @@
 
  @media  screen and (max-width: 1072px){
     .mainSection{
+        justify-content: start;
+        align-items: start;
         .textoIzquierda{
             font-size: 26px;
         }
@@ -358,34 +360,36 @@
         }
     
     }
-    .cards{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        height: 800px;
-        margin-top: 20px;
-        div{
-            align-items: center;
-            justify-content: center;
+    .conteinerCards{
+        .cards{
+            @include flex(column, center, center);
+            width: 100%;
+            height: 800px;
             margin-top: 20px;
-            padding-top: 0;
-            text-align: center;
-            width: 100%;
-        } 
-        p{
-            padding: 15px;
-            width: 100%;
+            div{
+                @include flex(column, center, center);
+                margin-top: 20px;
+                padding-top: 0;
+                text-align: center;
+                width: 100%;
+            } 
+            p{
+                padding: 15px;
+                width: 100%;
+            }
+            .imagenTestimonio{
+                margin-top: 10px;
+                object-fit: cover;
+                width: 300px;
+                height: 300px;
+            }
         }
-        .imagenTestimonio{
-            margin-top: 10px;
-            object-fit: cover;
-            width: 300px;
-            height: 300px;
+        .card-fondo{
+            background: $fondo-left;
         }
+
     }
-    .card-fondo{
-        background: $fondo-left;
-    }
+    
    
 }
 @media screen and (max-width: 400px){

@@ -8,13 +8,12 @@
 }
 
 .conteinerCursos{
-    justify-content: center;
+    @include grid(center, center);
+    grid-template-columns: 30% 30%;
     margin: 80px 0px 500px 0px;
     text-align: center;
     width: 100%;
     gap: 10%;
-    display: grid;
-    grid-template-columns: 30% 30%;
     height: 100%;
     .cursos{
         height: 100%;
@@ -47,6 +46,7 @@
             border-radius: 25px;
             box-shadow: 3px 3px 10px #c0a261;
             color: rgb(255, 255, 255);
+            transition: all 0.3s;
             &:hover{
                 scale: 1.1;
             }
