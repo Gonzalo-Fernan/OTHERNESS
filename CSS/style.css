@@ -2,7 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: montserrat;
+  font-family: montserrat, sans-serif;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
 
 main {
   width: 100%;
-  font-family: monstserrat, verdana;
   position: relative;
 }
 
@@ -69,7 +68,6 @@ header {
 }
 .navBar div {
   display: flex;
-  font-family: montserrat, sans-serif;
   font-weight: bolder;
   animation-name: titulo;
   animation-duration: 1s;
@@ -229,7 +227,7 @@ main {
 .mainSection .Boton, .mainSectionGaleria .Boton {
   margin-top: 10%;
   cursor: pointer;
-  font-family: monstserrat, verdana;
+  font-family: montserrat, sans-serif;
   height: 50px;
   width: 150px;
   border: none;
@@ -306,7 +304,7 @@ main {
 .mainSectionGaleria .BotonGaleria {
   margin-top: 3%;
   cursor: pointer;
-  font-family: monstserrat, verdana;
+  font-family: montserrat, sans-serif;
   height: 50px;
   width: 120px;
   border: none;
@@ -357,7 +355,7 @@ main {
 }
 .conteinerCursos .cursos .botonCursos {
   cursor: pointer;
-  font-family: monstserrat, verdana;
+  font-family: montserrat, sans-serif;
   font-size: 0.7rem;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -642,12 +640,12 @@ main {
   width: 55%;
 }
 .conteinerCards h2 {
-  font-family: monstserrat, verdana;
+  font-family: montserrat, sans-serif;
   font-weight: bolder;
 }
 .conteinerCards p {
   font-size: 1rem;
-  font-family: monstserrat, verdana;
+  font-family: montserrat, sans-serif;
   margin-top: 20px;
   width: 100%;
   padding-left: 10px;
