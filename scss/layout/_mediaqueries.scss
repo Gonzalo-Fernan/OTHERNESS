@@ -1,19 +1,45 @@
 
 /* ---------MEDIA QUERIES Navbar---------- */
 
-@media screen and (max-width: 400px){
+// @media screen and (max-width: 400px){
+//     .navBar div{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+      
+        
+//     }
+// }
+@media  screen and (max-width: 469px){
     .navBar div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3{
-            margin: 0;
+        position: relative;
+        .espacio{
+            position: absolute;
+            margin-top: 75px;
+            margin-left: 50px;
+           
+        }
+        .otherness{
+            margin-top: 35px;
         }
         
     }
-   
 }
-
+@media  screen and (max-width: 340px){
+    .navBar div{
+        position: relative;
+        .espacio{
+            margin-top: 75px;
+            margin-left: 30px;
+           
+        }
+        .otherness{
+            margin-top: 35px;
+            margin-left: 10px;
+        }
+        
+    }
+}
 /* ---------MEDIA QUERIES INDEX---------- */
 
  @media  screen and (max-width: 1072px){
@@ -21,19 +47,19 @@
         justify-content: start;
         align-items: start;
         .textoIzquierda{
-            font-size: 26px;
+            font-size: 2.5rem;
         }
         .textoIzquierdaDescripcion{
-            font-size: 18px;
+            font-size: 1.5rem;
         }
     }
     .mainSectionGaleria{
         div{
             .textoIzquierdaGaleria{
-                font-size: 26px;
+                font-size: 2.5rem;
             }
             .textoIzquierdaDescripcionGaleria{
-                font-size: 18px;
+                font-size: 1.5rem;
             }
         } 
     }
@@ -95,22 +121,22 @@
         }
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .mainSection{
         .textoIzquierda{
-            font-size: 18px;
+            font-size: 1.5rem;
         }
         .textoIzquierdaDescripcion{
-            font-size: 16px;  
+            font-size: 1.2rem;  
         }
     }
     .mainSectionGaleria{
         div{
             .textoIzquierdaGaleria{
-                font-size: 18px;
+                font-size: 1.5rem;
             }
             .textoIzquierdaDescripcionGaleria{
-                font-size: 16px;
+                font-size: 1.2rem;
             }
         }
     }
@@ -118,7 +144,7 @@
 
 /* ---------MEDIA QUERIES Menu offcanvas Boostrap---------- */
 
- @media screen and (max-width: 1010px){
+ @media screen and (max-width: 1061px){
     .navBar{
         display: flex;
         .nav-links{

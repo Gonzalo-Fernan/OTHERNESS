@@ -16,21 +16,23 @@ header{
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: 2;
-        h2{
+        .otherness{
+            font-size: 30px;
             color: #000;
             text-decoration: none;
             cursor: pointer;
             margin-top: 50px;
             margin-left: 40px;
+            transition: .3s;
             &:hover{
                 font-size: 35px;
                 color: #94722a;
             }
         }
-        h3{
+        .espacio{
             padding-left: 5px;
             margin-top: 63px;
-            font-size: 10px;
+            font-size: 1rem;
         }
     }
     .Logo{
@@ -40,6 +42,7 @@ header{
         margin-top: 0.5%;
         padding: 0;
         height: 80%;
+        transition: .3s;
         &:hover{
             scale: 1.1;
             }
@@ -53,9 +56,6 @@ header{
         color: black;
         justify-content: end;
         flex-grow: 4;
-    }
-    h1{
-        display: none;
     }
     a{
         text-decoration: none;

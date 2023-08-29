@@ -75,21 +75,23 @@ header {
   animation-delay: 0s;
   animation-iteration-count: 2;
 }
-.navBar div h2 {
+.navBar div .otherness {
+  font-size: 30px;
   color: #000;
   text-decoration: none;
   cursor: pointer;
   margin-top: 50px;
   margin-left: 40px;
+  transition: 0.3s;
 }
-.navBar div h2:hover {
+.navBar div .otherness:hover {
   font-size: 35px;
   color: #94722a;
 }
-.navBar div h3 {
+.navBar div .espacio {
   padding-left: 5px;
   margin-top: 63px;
-  font-size: 10px;
+  font-size: 1rem;
 }
 .navBar .Logo {
   width: 80px;
@@ -98,6 +100,7 @@ header {
   margin-top: 0.5%;
   padding: 0;
   height: 80%;
+  transition: 0.3s;
 }
 .navBar .Logo:hover {
   scale: 1.1;
@@ -111,9 +114,6 @@ header {
   color: black;
   justify-content: end;
   flex-grow: 4;
-}
-.navBar h1 {
-  display: none;
 }
 .navBar a {
   text-decoration: none;
@@ -289,14 +289,12 @@ main {
 .mainSectionGaleria div .textoIzquierdaGaleria {
   font-size: 3rem;
   text-align: left;
-  width: 90%;
-  padding: 5%;
+  width: 100%;
 }
 .mainSectionGaleria div .textoIzquierdaDescripcionGaleria {
   text-align: left;
-  padding: 5%;
   font-size: 1.5rem;
-  width: 90%;
+  width: 100%;
 }
 .mainSectionGaleria .imagenEspacio {
   object-fit: cover;
@@ -671,14 +669,30 @@ main {
 }
 
 /* ---------MEDIA QUERIES Navbar---------- */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 469px) {
   .navBar div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
   }
-  .navBar div h3 {
-    margin: 0;
+  .navBar div .espacio {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 50px;
+  }
+  .navBar div .otherness {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .navBar div {
+    position: relative;
+  }
+  .navBar div .espacio {
+    margin-top: 75px;
+    margin-left: 30px;
+  }
+  .navBar div .otherness {
+    margin-top: 35px;
+    margin-left: 10px;
   }
 }
 /* ---------MEDIA QUERIES INDEX---------- */
@@ -688,16 +702,16 @@ main {
     align-items: start;
   }
   .mainSection .textoIzquierda, .mainSectionGaleria .textoIzquierda {
-    font-size: 26px;
+    font-size: 2.5rem;
   }
   .mainSection .textoIzquierdaDescripcion, .mainSectionGaleria .textoIzquierdaDescripcion {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   .mainSectionGaleria div .textoIzquierdaGaleria {
-    font-size: 26px;
+    font-size: 2.5rem;
   }
   .mainSectionGaleria div .textoIzquierdaDescripcionGaleria {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   .textos {
     flex-direction: column;
@@ -756,22 +770,22 @@ main {
     margin: 0;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .mainSection .textoIzquierda, .mainSectionGaleria .textoIzquierda {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   .mainSection .textoIzquierdaDescripcion, .mainSectionGaleria .textoIzquierdaDescripcion {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
   .mainSectionGaleria div .textoIzquierdaGaleria {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   .mainSectionGaleria div .textoIzquierdaDescripcionGaleria {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 }
 /* ---------MEDIA QUERIES Menu offcanvas Boostrap---------- */
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1061px) {
   .navBar {
     display: flex;
   }
