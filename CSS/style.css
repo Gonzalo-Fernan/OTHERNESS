@@ -514,7 +514,7 @@ main {
   width: 400px;
   height: 300px;
   border: none;
-  transition: all 0.3s;
+  transition: 0.5s;
 }
 .ubicacion iframe:hover {
   width: 500px;
