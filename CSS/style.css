@@ -578,8 +578,8 @@ main {
   height: 850px;
 }
 .CarruselImagenes .carousel-inner {
-  margin: 0%;
   margin-left: 20%;
+  margin-right: 20%;
   height: 80%;
   width: 80%;
 }
@@ -595,18 +595,20 @@ main {
 .CarruselImagenes .carousel-control-next {
   right: 16%;
   height: 80%;
+  transition: 0.5s;
 }
 .CarruselImagenes .carousel-control-next:hover {
   color: white;
-  scale: 1.4;
+  scale: 2;
 }
 .CarruselImagenes .carousel-control-prev {
   left: 20%;
   height: 80%;
+  transition: 0.5s;
 }
 .CarruselImagenes .carousel-control-prev:hover {
   color: white;
-  scale: 1.4;
+  scale: 2;
 }
 
 /*  -------------TESTIMONIOS ------------- */
