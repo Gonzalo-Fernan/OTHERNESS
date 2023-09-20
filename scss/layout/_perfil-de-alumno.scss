@@ -1,0 +1,56 @@
+.contenedorPerfil{
+    margin-top: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: $fondo-right;
+    .contenedorInterno{
+        padding: 50px;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 200px;
+        background: $fondo-left;
+        border-radius: 30px;
+        font-family: $fuente;
+        font-weight: bold;
+        div{
+            margin-top: -100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            input{
+
+                padding: 10px;
+                width: 500px;
+                height: 50px;
+                border-radius: 15px;
+                border: none;
+            }
+        }
+        .botonPerfil{
+            cursor: pointer;
+            border: none;
+            width: 200px;
+            height: 40px;
+            background-color: rgb(68, 70, 73);
+            font-size: 1rem;
+            color: white;
+            border-radius: 30px;
+            transition: .5s;
+            box-shadow: 5px 5px 5px 1px #000;
+            &:hover{
+                scale: 1.2;
+            }
+        }
+    }
+    
+}
