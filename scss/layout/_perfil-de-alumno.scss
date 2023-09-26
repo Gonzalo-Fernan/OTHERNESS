@@ -10,12 +10,12 @@
     .contenedorInterno{
         padding: 50px;
         width: 70%;
-        height: 50%;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
-        gap: 200px;
+        justify-content: center;
+        gap: 100px;
         background: $fondo-left;
         border-radius: 30px;
         font-family: $fuente;
@@ -28,29 +28,92 @@
             justify-content: center;
             gap: 80px;
             input{
-
+                margin-top: 50px;
                 padding: 10px;
                 width: 500px;
                 height: 50px;
                 border-radius: 15px;
                 border: none;
             }
-        }
-        .botonPerfil{
-            cursor: pointer;
-            border: none;
-            width: 200px;
-            height: 40px;
-            background-color: rgb(68, 70, 73);
-            font-size: 1rem;
-            color: white;
-            border-radius: 30px;
-            transition: .5s;
-            box-shadow: 5px 5px 5px 1px #000;
-            &:hover{
-                scale: 1.2;
+            .botonPerfil{
+                cursor: pointer;
+                border: none;
+                width: 200px;
+                height: 40px;
+                background-color: rgb(68, 70, 73);
+                font-size: 1rem;
+                color: white;
+                border-radius: 30px;
+                transition: .5s;
+                box-shadow: 5px 5px 5px 1px #000;
+                &:hover{
+                    scale: 1.2;
+                }
+            }
+            .recomendacion{
+                font-size: 1.2rem;
             }
         }
+        .contenedorRecomendaciones{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            .cursoAgregdo{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 500px;
+                height: 400px;
+                background: linear-gradient(white, #ffd783);
+                border-radius: 20px;
+                .tituloCurso{
+                    font-family: montserrat;
+                    font-size: 1rem;
+                    font-weight: bold;
+                 
+                }
+                .imgCursoTelas{
+                    margin-top: -70px;
+                    width: 80%;
+                    height: 25%;
+                    object-fit: cover;
+                    border: none;
+                    border-radius: 20px;
+                }
+                .botonInscripcion{
+                    margin-top: -40px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    font-family: $fuente;
+                    font-size: 0.7rem;
+                    height: 50px;
+                    width: 100px;
+                    border: none;
+                    background-color: #44433f;
+                    border-radius: 25px;
+                    box-shadow: 3px 3px 10px #c0a261;
+                    color: rgb(255, 255, 255);
+                    transition: all 0.3s;
+                    &:hover{
+                        scale: 1.2;
+                    }
+                }
+                .descripcionCurso{
+                    margin-top: -50px;
+                    padding: 15px;
+                    font-size: 0.8rem;
+                    font-family: montserrat;
+                }
+            }
+
+        }
+        
     }
-    
 }
+    
+   
+
+    

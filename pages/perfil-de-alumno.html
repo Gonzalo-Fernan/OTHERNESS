@@ -9,7 +9,7 @@
     <!-- Primary Meta Tags -->
     <title>Otherness Espacio Creativo</title>
     <meta name="title" content="Otherness Espacio Creativo" />
-    <script defer src="../main.js"></script>
+    <script defer src="../JS/main.js"></script>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://otherness-steel.vercel.app/index.html" />
@@ -41,6 +41,8 @@
                         <p class="espacio">Espacio Creativo</p>
                     </div>
                     <ul class="nav-links" id="nav-links">
+                       <li> <a href="perfil-de-alumno.html">Perfil de Alumno</a></li>
+                       <hr> 
                        <li> <a href="cursos.html">Cursos</a></li>
                        <hr>
                        <li> <a href="sobre-nosotros.html">Sobre Nosotros</a></li>
@@ -51,15 +53,18 @@
                     </ul>
                 </nav>
     </header>
-    
+
     <!---------- Contenido principal ------------->
 
     <section class="contenedorPerfil">
-        <article class="contenedorInterno">
-            <h1>Averigua que curso se ajusta mas a tu perfil.</h1>
-            <div>
+        <article id="contenedorInterno"  class="contenedorInterno">
+            <h1>Averigua que curso se ajusta más a tu perfil.</h1>
+            <div id="contenedorInput">
                 <input id="nombre" type="text" placeholder="Ingrese: Nombre y Apellido">
-                <button id="botonPerfil" class="botonPerfil" >Conocer mi Perfil</button>
+                <button id="botonPerfil" class="botonPerfil">Conocer mi Perfil</button>
+            </div>
+            <div id="contenedorRecomendaciones" class="contenedorRecomendaciones">
+
             </div>
         </article>
     </section>
