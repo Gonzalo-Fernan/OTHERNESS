@@ -2,18 +2,19 @@
 
 const nombreAlumno = document.getElementById("nombre");      // esta es la variable para el input del nombre
 const botonAlumno = document.getElementById("botonPerfil");  // esta es la variable para el boton que activa la funcion ingreasarExperiancia
-
 // variables para las opciones de conocimientos 
 let conocimientosBajos = "ninguno";  
 let conocimientosMedios = "medios"; 
 let conocimientosAltos = "avanzados";
 
-function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta un curso de en el html
+//Declaracion de funciones
+
+function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta el workshop de telas en el html
    const contenedorInterno = document.getElementById("contenedorInput")
    const recomendacion = document.createElement("p");
    contenedorInterno.appendChild(recomendacion);
    recomendacion.className = "recomendacion"
-   recomendacion.textContent = "Estos son los cursos que se ajustan mas a tus conocimientos:" 
+   recomendacion.textContent = "Estos son los cursos que se ajustan más a tus conocimientos:" 
    const contenedor = document.getElementById("contenedorRecomendaciones");
    const cursoRecomendado = document.createElement("div");
    const imagenCurso = document.createElement("img");
@@ -31,11 +32,11 @@ function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta un
    botonCurso.textContent = "Inscribirme";
    cursoRecomendado.className = "cursoAgregdo";
    imagenCurso.src = "../assets/images/CursoCosturasBasicas.webp";
-   imagenCurso.className = ("imgCursoTelas");
+   imagenCurso.className = "imgCursoTelas";
    tituloCurso.textContent = "Workshop. Mundo de Telas";
    tituloCurso.className = "tituloCurso";
 }
-function insertarCursoRecomendadoCosturasBasicas (){
+function insertarCursoRecomendadoCosturasBasicas (){ // esta es la funcion que inserta el curso de costuras basicas y manejo de maquina en el html
    const contenedorCosturasBasicas = document.getElementById("contenedorRecomendaciones");
    const cursoRecomendadoCosturasBasicas = document.createElement("div");
    const imagenCursoCosturasBasicas = document.createElement("img");
@@ -53,14 +54,58 @@ function insertarCursoRecomendadoCosturasBasicas (){
    botonCursoCosturasBasicas.textContent = "Inscribirme";
    cursoRecomendadoCosturasBasicas.className = "cursoAgregdo";
    imagenCursoCosturasBasicas.src = "../assets/images/CursoManejoMaquina.webp";
-   imagenCursoCosturasBasicas.className = ("imgCursoTelas");
+   imagenCursoCosturasBasicas.className = "imgCursoTelas";
    tituloCursoCosturasBasicas.textContent = "Costuras Basicas y Manejo de Maquina";
    tituloCursoCosturasBasicas.className = "tituloCurso";
 }
-//function
+function insertarCursoRecomendadoLenceria (){   // esta es la funcion que inserta el curso de Lenceria en el html
+   const contenedorLenceria = document.getElementById("contenedorRecomendaciones");
+   const cursoRecomendadoLenceria = document.createElement("div");
+   const imagenCursoLenceria = document.createElement("img");
+   const tituloCursoLenceria = document.createElement("h2");
+   const botonCursoLenceria = document.createElement ("button");
+   const cursoDescripcionLenceria = document.createElement("p");
+   contenedorLenceria.appendChild(cursoRecomendadoLenceria);
+   cursoRecomendadoLenceria.appendChild(tituloCursoLenceria);
+   cursoRecomendadoLenceria.appendChild(imagenCursoLenceria);
+   cursoRecomendadoLenceria.appendChild(cursoDescripcionLenceria);
+   cursoRecomendadoLenceria.appendChild(botonCursoLenceria);
+   cursoDescripcionLenceria.textContent ="En este curso aprenderás todos los secretos de la lenceria su confeccion y tipos de telas y como trabajarlas"
+   cursoDescripcionLenceria.className = "descripcionCurso"
+   botonCursoLenceria.className = "botonInscripcion";
+   botonCursoLenceria.textContent = "Inscribirme";
+   cursoRecomendadoLenceria.className = "cursoAgregdo";
+   imagenCursoLenceria.src = "../assets/images/CursoLenceria.webp";
+   imagenCursoLenceria.className = "imgCursoTelas";
+   tituloCursoLenceria.textContent = "Lenceria";
+   tituloCursoLenceria.className = "tituloCurso";
+}
+function insertarCursoRecomendadoMolderia (){ // esta es la funcion que inserta el curso de Molderia en el html
+   const contenedorMolderia = document.getElementById("contenedorRecomendaciones");
+   const cursoRecomendadoMolderia = document.createElement("div");
+   const imagenCursoMolderia = document.createElement("img");
+   const tituloCursoMolderia = document.createElement("h2");
+   const botonCursoMolderia = document.createElement ("button");
+   const cursoDescripcionMolderia = document.createElement("p");
+   contenedorMolderia.appendChild(cursoRecomendadoMolderia);
+   cursoRecomendadoMolderia.appendChild(tituloCursoMolderia);
+   cursoRecomendadoMolderia.appendChild(imagenCursoMolderia);
+   cursoRecomendadoMolderia.appendChild(cursoDescripcionMolderia);
+   cursoRecomendadoMolderia.appendChild(botonCursoMolderia);
+   cursoDescripcionMolderia.textContent ="En este curso aprenderás la molderia necesaria para llevar a cabo tus prendas y las progresiones de los talles"
+   cursoDescripcionMolderia.className = "descripcionCurso"
+   botonCursoMolderia.className = "botonInscripcion";
+   botonCursoMolderia.textContent = "Inscribirme";
+   cursoRecomendadoMolderia.className = "cursoAgregdo";
+   imagenCursoMolderia.src = "../assets/images/molderia1.png";
+   imagenCursoMolderia.className = "imgCursoTelas";
+   tituloCursoMolderia.textContent = "Molderia";
+   tituloCursoMolderia.className = "tituloCurso";
 
-//Esta es la funcion que activa los prompt para que el usuario nos diga su experiencia
-function ingresarExperiencia (experiencia){
+}
+
+
+function ingresarExperiencia (experiencia){ //Esta es la funcion que activa los prompt para que el usuario nos diga su experiencia
    if (nombreAlumno.value === ""){ //condicional para la validacion del nombre, se debe ingresar un nombre para continuar
       alert("Para continuar debes ingresar un nombre");
    }
@@ -73,9 +118,48 @@ function ingresarExperiencia (experiencia){
             if(maquinaCoser === "ninguno" || maquinaCoser === "medio" || maquinaCoser === "avanzado"){
                alert ("A continuacion, te sugerimos los siguientes cursos en base a tus conocimientos");
                // aca van los cursos agregados al html gusrdados en una funcion
-               insertarCursoRecomendadoTelas();
-               insertarCursoRecomendadoCosturasBasicas();
-               break;
+               if (experiencia === conocimientosBajos && maquinaCoser === "ninguno"){
+                  insertarCursoRecomendadoTelas();
+                  insertarCursoRecomendadoCosturasBasicas();
+                  break;
+               }
+               if (experiencia === conocimientosBajos && maquinaCoser === "medio"){
+                  insertarCursoRecomendadoMolderia();
+                  insertarCursoRecomendadoCosturasBasicas();
+                  break;
+               }
+               if (experiencia === conocimientosBajos && maquinaCoser === "avanzado"){
+                  insertarCursoRecomendadoMolderia();
+                  insertarCursoRecomendadoLenceria();
+                  break;
+               }
+               if (experiencia === conocimientosMedios && maquinaCoser === "ninguno"){
+                  insertarCursoRecomendadoCosturasBasicas();
+                  break;
+               }
+               if (experiencia === conocimientosMedios && maquinaCoser === "medio"){
+                  insertarCursoRecomendadoTelas();
+                  insertarCursoRecomendadoMolderia();
+                  break;
+               }
+               if (experiencia === conocimientosMedios && maquinaCoser === "avanzado"){
+                  insertarCursoRecomendadoLenceria();
+                  break;
+               }
+               if (experiencia === conocimientosAltos && maquinaCoser === "ninguno"){
+                  insertarCursoRecomendadoLenceria();
+                  insertarCursoRecomendadoCosturasBasicas();
+                  break;
+               }
+               if (experiencia === conocimientosAltos && maquinaCoser === "medio"){
+                  insertarCursoRecomendadoLenceria();
+                  insertarCursoRecomendadoMolderia();
+                  break;
+               }
+               if (experiencia === conocimientosAltos && maquinaCoser === "avanzado"){
+                  insertarCursoRecomendadoLenceria();
+                  break;
+               }
                }else {
                   alert ("Debes ingresar uno de los 3 valores permitidos: ninguno, medio, avanzado")
                }   
@@ -83,6 +167,5 @@ function ingresarExperiencia (experiencia){
             alert ("Debes ingresar uno de los 3 valores permitidos: ninguno, medios o avanzados");}
    }
 }
-
 
 botonAlumno.addEventListener("click", ingresarExperiencia); // este es el evento click asociado al boton que inicia la funcion ingresarExperiencia
