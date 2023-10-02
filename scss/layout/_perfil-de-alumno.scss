@@ -20,6 +20,10 @@
         border-radius: 30px;
         font-family: $fuente;
         font-weight: bold;
+        #contenedorInput{
+            width: 100%;
+          
+        }
         div{
             margin-top: -100px;
             display: flex;
@@ -30,7 +34,7 @@
             input{
                 margin-top: 50px;
                 padding: 10px;
-                width: 500px;
+                width: 50%;
                 height: 50px;
                 border-radius: 15px;
                 border: none;
@@ -113,7 +117,5 @@
         
     }
 }
-    
-   
 
     

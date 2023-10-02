@@ -2,13 +2,39 @@
 
 const nombreAlumno = document.getElementById("nombre");      // esta es la variable para el input del nombre
 const botonAlumno = document.getElementById("botonPerfil");  // esta es la variable para el boton que activa la funcion ingreasarExperiancia
+
+
+//const botonInscripcion = document.getElementById("botonInscripcion");
+
 // variables para las opciones de conocimientos 
 let conocimientosBajos = "ninguno";  
 let conocimientosMedios = "medios"; 
 let conocimientosAltos = "avanzados";
 
-//Declaracion de funciones
+//objetos (cursos)   
+class Curso { 
+   constructor (id, duracion, precio, nivel){  //constructor de objetos Curso para crear un objeto nuevo de cada curso con sus atributos
+      this.id = id;
+      this.duracion = duracion;
+      this.precio = precio;
+      this.nivel = nivel;
+      }
+}
 
+const cursoMolderia = new Curso(1,"6 meses",12000, "pricipiante");
+const cursoLenceria = new Curso(2,"6 meses",15000,"avanzado");
+const cursoCosturasBasicas = new Curso(3,"4 meses",11000,"principiante");
+const cursoRopaInfantil = new Curso(4,"4 meses", 15000,"medio");
+const cursoTelas = new Curso(5, "5 meses", 9000, "principiante")
+
+const precios =[] //array que acumula los precios de los cursos seleccionados 
+console.log(cursoMolderia.precio);
+
+//Declaracion de funciones
+function total (){ // esta es la funcion que suma todos los valores que contiene el array precios, devuelte el total de los precios
+   const sumaPrecios = precios.reduce((acumulador, valor) => acumulador + valor, 0); 
+   console.log(sumaPrecios);
+}
 function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta el workshop de telas en el html
    const contenedorInterno = document.getElementById("contenedorInput")
    const recomendacion = document.createElement("p");
@@ -29,12 +55,14 @@ function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta el
    cursoDescripcion.textContent ="En este curso aprenderás a diferenciar entre fibras y telas y reconocer en que caso es mas conveniente usar cada una y saber como tratarlas a la hora de la confección."
    cursoDescripcion.className = "descripcionCurso"
    botonCurso.className = "botonInscripcion";
+   botonCurso.id = "botonInscripcion";
    botonCurso.textContent = "Inscribirme";
    cursoRecomendado.className = "cursoAgregdo";
    imagenCurso.src = "../assets/images/CursoCosturasBasicas.webp";
    imagenCurso.className = "imgCursoTelas";
    tituloCurso.textContent = "Workshop. Mundo de Telas";
    tituloCurso.className = "tituloCurso";
+   botonCurso.addEventListener("click", () => {precios.push(cursoTelas.precio); console.log(precios);})
 }
 function insertarCursoRecomendadoCosturasBasicas (){ // esta es la funcion que inserta el curso de costuras basicas y manejo de maquina en el html
    const contenedorCosturasBasicas = document.getElementById("contenedorRecomendaciones");
@@ -57,6 +85,7 @@ function insertarCursoRecomendadoCosturasBasicas (){ // esta es la funcion que i
    imagenCursoCosturasBasicas.className = "imgCursoTelas";
    tituloCursoCosturasBasicas.textContent = "Costuras Basicas y Manejo de Maquina";
    tituloCursoCosturasBasicas.className = "tituloCurso";
+   botonCursoCosturasBasicas.addEventListener("click", () => {precios.push(cursoCosturasBasicas.precio); console.log(precios);})
 }
 function insertarCursoRecomendadoLenceria (){   // esta es la funcion que inserta el curso de Lenceria en el html
    const contenedorLenceria = document.getElementById("contenedorRecomendaciones");
@@ -101,10 +130,7 @@ function insertarCursoRecomendadoMolderia (){ // esta es la funcion que inserta 
    imagenCursoMolderia.className = "imgCursoTelas";
    tituloCursoMolderia.textContent = "Molderia";
    tituloCursoMolderia.className = "tituloCurso";
-
 }
-
-
 function ingresarExperiencia (experiencia){ //Esta es la funcion que activa los prompt para que el usuario nos diga su experiencia
    if (nombreAlumno.value === ""){ //condicional para la validacion del nombre, se debe ingresar un nombre para continuar
       alert("Para continuar debes ingresar un nombre");

@@ -1063,6 +1063,9 @@ main {
   font-family: montserrat, sans-serif;
   font-weight: bold;
 }
+.contenedorPerfil .contenedorInterno #contenedorInput {
+  width: 100%;
+}
 .contenedorPerfil .contenedorInterno div {
   margin-top: -100px;
   display: flex;
@@ -1074,7 +1077,7 @@ main {
 .contenedorPerfil .contenedorInterno div input {
   margin-top: 50px;
   padding: 10px;
-  width: 500px;
+  width: 50%;
   height: 50px;
   border-radius: 15px;
   border: none;

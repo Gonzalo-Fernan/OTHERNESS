@@ -26,7 +26,7 @@
      <!-- Link para conectar con bootstrap--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
      <!-- Link fuentes de google--> <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
      <!-- Link fuentes que conecta con el css--> <link rel="stylesheet" href="../CSS/style.css">
-     <!-- Link Favicon--> <link rel="icon" href="assets/logos/LogoOthernessFavi.svg"/>
+     <!-- Link Favicon--> <link rel="icon" href="../assets/logos/LogoOthernessFavi.svg"/>
 
 </head>
 <body>
@@ -53,6 +53,24 @@
                     </ul>
                 </nav>
     </header>
+    <!--Menu offcanvas bootstrap-->
+    <div class="contenedor-boton">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">MENU</button>
+    </div>    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">OTHERNESS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="../index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="perfil-de-alumno.html">Perfil de Alumno</a>
+    </div> 
+    </div>
 
     <!---------- Contenido principal ------------->
 
@@ -70,3 +88,6 @@
     </section>
 </body>
 </html>
+
+
+
