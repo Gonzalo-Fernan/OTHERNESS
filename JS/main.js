@@ -2,39 +2,53 @@
 
 const nombreAlumno = document.getElementById("nombre");      // esta es la variable para el input del nombre
 const botonAlumno = document.getElementById("botonPerfil");  // esta es la variable para el boton que activa la funcion ingreasarExperiancia
-
-
-//const botonInscripcion = document.getElementById("botonInscripcion");
+const buscador = document.getElementById("buscar").value;          // variable que conecta con el input del buscador
+const botonBuscar = document.getElementById("botonBuscar");  // boton para ejecutar la busqueda 
 
 // variables para las opciones de conocimientos 
 let conocimientosBajos = "ninguno";  
 let conocimientosMedios = "medios"; 
 let conocimientosAltos = "avanzados";
 
-//objetos (cursos)   
-class Curso { 
-   constructor (id, duracion, precio, nivel){  //constructor de objetos Curso para crear un objeto nuevo de cada curso con sus atributos
-      this.id = id;
-      this.duracion = duracion;
-      this.precio = precio;
-      this.nivel = nivel;
-      }
-}
+const cursosDisponibles =[
+   {nombre:"molderia",
+    id: 1,
+    duracion: "6 meses",
+    precio: 12325,
+    nivel: "pincipiante"  
+   },
+   {nombre:"lenceria",
+   id: 2,
+   duracion: "6 meses",
+   precio: 15320,
+   nivel: "avanzado" 
+   },
+   {nombre:"costura",
+   id: 3,
+   duracion: "4 meses",
+   precio: 11520,
+   nivel: "principiante" 
+   },
+   {nombre:"molderia infantil",
+   id: 4,
+   duracion: "4 meses",
+   precio: 15210,
+   nivel: "medio" 
+   },
+   {nombre:"bordado",
+   id: 5,
+   duracion: "5 meses",
+   precio: 9320,
+   nivel: "principiante" 
+   },
+   {nombre:"bañador",
+   id: 6,
+   duracion: "3 meses",
+   precio: 8220,
+   nivel: "principiante" 
+   }
+]
 
-const cursoMolderia = new Curso(1,"6 meses",12000, "pricipiante");
-const cursoLenceria = new Curso(2,"6 meses",15000,"avanzado");
-const cursoCosturasBasicas = new Curso(3,"4 meses",11000,"principiante");
-const cursoRopaInfantil = new Curso(4,"4 meses", 15000,"medio");
-const cursoTelas = new Curso(5, "5 meses", 9000, "principiante")
-
-const precios =[] //array que acumula los precios de los cursos seleccionados 
-console.log(cursoMolderia.precio);
-
-//Declaracion de funciones
-function total (){ // esta es la funcion que suma todos los valores que contiene el array precios, devuelte el total de los precios
-   const sumaPrecios = precios.reduce((acumulador, valor) => acumulador + valor, 0); 
-   console.log(sumaPrecios);
-}
 function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta el workshop de telas en el html
    const contenedorInterno = document.getElementById("contenedorInput")
    const recomendacion = document.createElement("p");
@@ -62,7 +76,7 @@ function insertarCursoRecomendadoTelas (){  // esta es la funcion que inserta el
    imagenCurso.className = "imgCursoTelas";
    tituloCurso.textContent = "Workshop. Mundo de Telas";
    tituloCurso.className = "tituloCurso";
-   botonCurso.addEventListener("click", () => {precios.push(cursoTelas.precio); console.log(precios);})
+   //botonCurso.addEventListener("click", () => {precios.push(cursoTelas.precio); console.log(precios);})
 }
 function insertarCursoRecomendadoCosturasBasicas (){ // esta es la funcion que inserta el curso de costuras basicas y manejo de maquina en el html
    const contenedorCosturasBasicas = document.getElementById("contenedorRecomendaciones");
@@ -85,7 +99,7 @@ function insertarCursoRecomendadoCosturasBasicas (){ // esta es la funcion que i
    imagenCursoCosturasBasicas.className = "imgCursoTelas";
    tituloCursoCosturasBasicas.textContent = "Costuras Basicas y Manejo de Maquina";
    tituloCursoCosturasBasicas.className = "tituloCurso";
-   botonCursoCosturasBasicas.addEventListener("click", () => {precios.push(cursoCosturasBasicas.precio); console.log(precios);})
+   //botonCursoCosturasBasicas.addEventListener("click", () => {precios.push(cursoCosturasBasicas.precio); console.log(precios);})
 }
 function insertarCursoRecomendadoLenceria (){   // esta es la funcion que inserta el curso de Lenceria en el html
    const contenedorLenceria = document.getElementById("contenedorRecomendaciones");
@@ -193,5 +207,70 @@ function ingresarExperiencia (experiencia){ //Esta es la funcion que activa los 
             alert ("Debes ingresar uno de los 3 valores permitidos: ninguno, medios o avanzados");}
    }
 }
+function buscar () {
+   const buscado = cursosDisponibles.some(e => e.nombre === document.getElementById("buscar").value.toLowerCase())
+   if (buscado){
+      for (let index = 0; index < cursosDisponibles.length; index++) {
+         if(cursosDisponibles[index].nombre === document.getElementById("buscar").value.toLowerCase()){
+            document.getElementById("listaCursos").classList.remove("lista");
+            document.getElementById("listaCursos").innerHTML = `
+            <div class="itemCurso">
+                  <input id="check" class="check" type="checkbox">
+                  <li id="molderia" class="lenceria">Curso ${cursosDisponibles[index].nombre} Precio: ${cursosDisponibles[index].precio}</li>
+                  <button class="masInfo">mas info...</button>
+                  <div id="agregadoCarrito"></div>
+               </div>`;
+         }
+      }
+   }else {alert("Debes ingresar el nombre de un curso")}
 
-botonAlumno.addEventListener("click", ingresarExperiencia); // este es el evento click asociado al boton que inicia la funcion ingresarExperiencia
+   const check = document.getElementById("check");
+  
+   check.addEventListener("click", (e) => {
+         if (check.checked) {
+            for (let index = 0; index < cursosDisponibles.length; index++) {
+               if(cursosDisponibles[index].nombre === document.getElementById("buscar").value.toLowerCase()){
+                  let descuento = Math.ceil(cursosDisponibles[index].precio - (cursosDisponibles[index].precio * 10 / 100));
+                  document.querySelector("#agregadoCarrito").innerHTML = `
+                  <div class="seleccinado">
+                     <p class ="agregar">Agregado este curso al carrito precio: $${cursosDisponibles[index].precio}</p>
+                     <p id=>Si pagas con transferencia tiene descuento del 10% = $${descuento} </p>
+                  </div>`;
+                  let botonPagar = document.createElement("button");
+                  botonPagar.classList = "botonPagar";
+                  botonPagar.textContent = "Pagar";
+                  document.getElementById("agregadoCarrito").appendChild(botonPagar);
+                  let botonCancelar = document.createElement("button");
+                  botonCancelar.classList = "botonCancelar";
+                  botonCancelar.textContent = "Cancelar";
+                  document.getElementById("agregadoCarrito").appendChild(botonCancelar);
+                  botonCancelar.addEventListener("click", (e) => {
+                     return location.reload()});
+                  break;
+               }
+            }
+            
+      }else {buscar()}
+   })   
+}
+
+// este es el evento click asociado al boton que inicia la funcion ingresarExperiencia
+botonAlumno.addEventListener("click", ingresarExperiencia); 
+//este boton activa el evento buscar para que muestre el resultado de la busqueda
+botonBuscar.addEventListener("click", buscar);
+// al presionar Escape hacermos que se recatgue la pagina limpando la lista y el campo de busqueda
+document.addEventListener("keyup", (e) =>{ 
+   if(e.code === "Escape"){
+      location.reload()
+   }
+})
+// // al presionar Enter que se ejecute la funcion buscar para que sea otra alternativa al boton buscar
+document.addEventListener("keydown", (e) =>{
+   if(e.code === "Enter"){
+      buscar();
+}
+})
+
+
+
+

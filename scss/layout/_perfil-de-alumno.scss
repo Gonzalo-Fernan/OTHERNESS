@@ -1,14 +1,16 @@
 .contenedorPerfil{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     text-align: center;
     width: 100%;
     height: 100vh;
     background: $fondo-right;
+    gap: 40px;
     .contenedorInterno{
-        padding: 50px;
+        padding: 40px;
         width: 70%;
         height: fit-content;
         display: flex;
@@ -47,9 +49,9 @@
                 background-color: rgb(68, 70, 73);
                 font-size: 1rem;
                 color: white;
-                border-radius: 30px;
+                border-radius: 10px;
                 transition: .5s;
-                box-shadow: 5px 5px 5px 1px #000;
+                box-shadow: 3px 3px 5px 1px #000;
                 &:hover{
                     scale: 1.2;
                 }
@@ -98,7 +100,7 @@
                     border: none;
                     background-color: #44433f;
                     border-radius: 25px;
-                    box-shadow: 3px 3px 10px #c0a261;
+                    box-shadow: 3px 3px 5px 1px #c0a261;
                     color: rgb(255, 255, 255);
                     transition: all 0.3s;
                     &:hover{
@@ -116,6 +118,166 @@
         }
         
     }
+.conteinerBuscadorTodo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .conteinerBuscador{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: fit-content;
+        gap: 40px;
+        background: $fondo-left;
+        border-radius: 30px;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .contenerdorCursosMostrados{
+            width:90%;
+        }
+        h3{
+            height: fit-content;
+        }
+        .escape{
+            width: 50%;
+            margin-top: -35px;
+            margin-left: -10px;
+            opacity: 60%;
+            font-size: .9rem;
+        }
+        input{
+            width: 40%;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            padding-left: 15px;
+            background-color: #ffffff;
+            color: rgb(7, 2, 2);        
+        }
+        .botonBuscar{
+            cursor: pointer;
+            font-family: $fuente;
+            font-size: 0.9rem;
+            height: 50px;
+            width: 100px;
+            border: none;
+            background-color: #44433f;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px #000000;
+            color: rgb(255, 255, 255);
+            transition: all 0.3s;
+            &:hover{
+                scale: 1.1;
+            }    
+        }
+        .listaCursos{
+            padding: 20px;
+            margin-top: -20px;
+            list-style: none;
+            text-align: start;
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background-color: #ffffff;
+            border-radius: 30px;
+            width: 100%;
+            height: fit-content;
+            div p{
+                font-size: 0.8rem;
+            }
+            li{
+                color: #ffffff;
+                width: 50%;
+                padding-top: 10px;
+                padding-left: 15px;
+                background-color: #646161;
+                border-radius: 10px;
+                height: 50px;
+            }
+            .masInfo{
+                cursor: pointer;
+                font-family: $fuente;
+                font-size: 0.9rem;
+                height: 40px;
+                width: 170px;
+                border: none;
+                background-color: #44433f;
+                border-radius: 15px;
+                box-shadow: 3px 3px 5px #000000;
+                color: rgb(255, 255, 255);
+                transition: all 0.3s;
+                &:hover{
+                    scale: 1.1;
+                }    
+            }
+            .check{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .lista{
+             display: none;
+        }
+        .todosCursos{
+            margin-left: 50%;
+        }
+        
+    
+    }    
 }
 
-    
+}
+.seleccinado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.agregar{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: -13px;
+}
+.botonPagar{
+    cursor: pointer;
+    font-family: $fuente;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 170px;
+    border: none;
+    background-color: #3f8339;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #000000;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    &:hover{
+        scale: 1.1;
+    }                    
+}
+.botonCancelar{
+    cursor: pointer;
+    font-family: $fuente;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 170px;
+    border: none;
+    background-color: #af3333;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #000000;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+    &:hover{
+        scale: 1.1;
+    }                    
+}
