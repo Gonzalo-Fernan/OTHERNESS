@@ -1128,13 +1128,20 @@ main {
   display: flex;
   flex-direction: row;
 }
+.contenedorPerfil .contenedorInterno .contenedorRecomendaciones .cursoRecomendado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 5px;
+}
 .contenedorPerfil .contenedorInterno .contenedorRecomendaciones .cursoAgregdo {
-  margin-top: 130px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 35%;
   height: 400px;
   background: linear-gradient(white, #ffd783);
   border-radius: 20px;
@@ -1315,7 +1322,7 @@ main {
   border: none;
   background-color: #3f8339;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px #000000;
+  box-shadow: 3px 3px 5px #000;
   color: rgb(255, 255, 255);
   transition: all 0.3s;
 }
@@ -1324,6 +1331,7 @@ main {
 }
 
 .botonCancelar {
+  margin-top: 18px;
   cursor: pointer;
   font-family: montserrat, sans-serif;
   font-size: 0.9rem;
@@ -1331,8 +1339,8 @@ main {
   width: 170px;
   border: none;
   background-color: #af3333;
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px #000000;
+  border-radius: 12px;
+  box-shadow: 3px 3px 5px #000;
   color: rgb(255, 255, 255);
   transition: all 0.3s;
 }
@@ -1357,6 +1365,11 @@ main {
 }
 .botonCalcular:hover {
   scale: 1.1;
+}
+
+.tituloCatalogo {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .contenedorMerceria {
@@ -1384,48 +1397,163 @@ main {
 }
 
 .contenedorMerceriaCards {
-  margin-top: 50px;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: start;
+}
+
+.contenedorCarrito {
+  margin-right: 2%;
+  padding: 15px;
+  color: aliceblue;
+  width: 400px;
+  height: 760px;
+  background-color: rgb(83, 80, 47);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: start;
+  align-items: last baseline;
+}
+
+.contenedorProductos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagenProducto {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.botonProducto {
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  width: 90px;
+  height: 40px;
+  background-color: rgb(83, 80, 47);
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 3px 3px 5px 1px #000;
+}
+.botonProducto:hover {
+  scale: 1.1;
+}
+
+.productoAgregado {
+  margin-left: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  align-items: center;
+  justify-items: left;
+}
+.productoAgregado h2 {
+  font-size: 18px;
+}
+
+#total {
+  margin-top: 80px;
+}
+
+.cancelarProducto {
+  width: 35px;
+  height: 30px;
+  background-color: red;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 3px 3px 3px #000;
+}
+.cancelarProducto:hover {
+  scale: 1.1;
+}
+
+.listaProductos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.nombreProducto {
+  font-size: 21px;
+}
+
+.botonPagar {
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  width: 160px;
+  height: 40px;
+  background-color: rgb #3f8339;
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 3px 3px 5px 1px #000;
+}
+.botonPagar:hover {
+  scale: 1.1;
+}
+
+.visible {
+  display: none;
+}
+
+.info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.contenedorMerceriaCards h3 {
-  margin-bottom: 50px;
-}
-
-.contenedorCarruselMerceria {
-  height: 800px;
-}
-
-.card {
-  padding: 5px;
-  width: 250px;
-  border-radius: 30px;
-  border: none;
-  height: 420px;
+  width: 800px;
+  height: 200px;
+  color: #000;
+  font-size: 22px;
+  box-shadow: 5px 5px 5px #000;
+  background: linear-gradient(#ffffff, #57bb3e);
 }
 
-.botonCard {
+.botonLimpiar {
+  margin-top: 15px;
   cursor: pointer;
-  font-family: montserrat, sans-serif;
-  font-size: 1.1rem;
-  height: 40px;
-  width: 110px;
   border: none;
-  background-color: #3f8339;
+  width: 160px;
+  height: 40px;
+  background-color: rgb(226, 24, 24);
+  font-size: 1rem;
+  color: white;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px #000000;
-  color: rgb(255, 255, 255);
-  transition: all 0.3s;
+  transition: 0.3s;
+  box-shadow: 3px 3px 5px 1px #000;
 }
-.botonCard:hover {
+.botonLimpiar:hover {
   scale: 1.1;
 }
-.botonCard a {
-  text-decoration: none;
-  color: antiquewhite;
+
+.elementoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c0a261;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

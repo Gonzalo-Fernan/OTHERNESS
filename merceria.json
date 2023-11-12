@@ -1,0 +1,72 @@
+[
+    {
+       "id": 1,
+       "nombre": "Tijeras",
+       "thumbnail": "../assets/images/tijeras.webp",
+       "precio": 9500,
+       "descripcion":"Tijera metalicas para tela" 
+    },
+    {
+       "id": 2,
+       "nombre": "Corta Hilachas",
+       "thumbnail": "../assets/images/cortaHilacha.webp",
+       "precio": 3200,
+       "descripcion":"variedad de colores" 
+    },
+    {
+      "id": 3,
+      "nombre": "Centimetro",
+      "thumbnail": "../assets/images/centimetro.jpg",
+      "precio": 2500,
+      "descripcion":"1.5 metros varios colores" 
+   },
+   {
+      "id": 4,
+      "nombre": "Alfileres",
+      "thumbnail": "../assets/images/alfileres.jpg",
+      "precio": 1500,
+      "descripcion":"caja de 25 alfileres" 
+   },
+   {
+      "id": 5,
+      "nombre": "Regla",
+      "thumbnail": "../assets/images/regla.png",
+      "precio": 2800,
+      "descripcion":"Regla madera 1 metro" 
+   },
+   {
+      "id": 6,
+      "nombre": "Cierre",
+      "thumbnail": "../assets/images/cierre.webp",
+      "precio": 2500,
+      "descripcion":"todos los colores disponible" 
+   },
+   {
+      "id": 7,
+      "nombre": "Agujas",
+      "thumbnail": "../assets/images/agujas.jpg",
+      "precio": 2500,
+      "descripcion":"10 agujas de coser" 
+   },
+   {
+      "id": 8,
+      "nombre": "Elastico",
+      "thumbnail": "../assets/images/elastico.png",
+      "precio": 2000,
+      "descripcion":"colores varios" 
+   },
+   {
+      "id": 9,
+      "nombre": "Cono de hilo",
+      "thumbnail": "../assets/images/conoHilo.png",
+      "precio": 1800,
+      "descripcion":"Gran variedad de colores" 
+   },
+   {
+      "id": 10,
+      "nombre": "Alfiler de Gancho",
+      "thumbnail": "../assets/images/alfileresGancho.jpg",
+      "precio": 1500,
+      "descripcion":"Caja de 25 alfileres" 
+   }
+ ]

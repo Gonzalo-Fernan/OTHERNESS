@@ -22,7 +22,9 @@
     <meta property="twitter:image" content="https://otherness-steel.vercel.app/assets/images/fotoSobreNosotros.webp" />
     
     <meta name="description" content="Cursos personalizados a tu experiencia, si no tenes ninguna experiencia te formamos de 0 a 100">
+    <!-- Link para conectar con bootstrap--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Link fuentes de google--><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--Link estilos TOSTIFY--><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- Link fuentes que conecta con el css--><link rel="stylesheet" href="../CSS/style.css">
     <!-- Link Favicon--><link rel="shortcut icon" href="../assets/logos/LogoOthernessFavi.svg">
 </head>
@@ -77,56 +79,23 @@
     <h1 id="tituloCursos" class="tituloCursos">Merceria</h1>
     <section class="contenedorMerceria">
         <article class="contenedorFiltro">
-            <input class="filtro" id="filtro" type="text" placeholder="Filtrar busqueda...">
+           <!-- <input class="filtro" id="filtro" type="text" placeholder="Filtrar busqueda..."> -->
 
         </article>
+        <h3 class="tituloCatalogo">CATALOGO</h3>
         <article id="contenedorMerceriaCards" class="contenedorMerceriaCards">
-            <h3>CATALOGO</h3>
-            <!-- <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="card">
-                        <img src="../assets/images/centimetro.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tijeras Tela Modista</h5>
-                          <p class="card-text"> text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="botonCard"><a href="#" >Comprar</a></button>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card">
-                        <img src="../assets/images/tijeras.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tijeras Tela Modista</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="botonCard"><a href="#" >Comprar</a></button>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card">
-                        <img src="../assets/images/tijeras.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tijeras Tela Modista</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="botonCard"><a href="#" >Comprar</a></button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div> -->
-            
-        </article>
 
+            <div id="contenedorCarrito" class="contenedorCarrito">
+                <h2>Mi Carrito:</h2>
+                <div id ="listaProductos" class="listaProductos">
+                </div>
+                <div id="contenedorTotal" class="contenedorTotal">
+                    <h2 id="total"> </h2>
+                    <button id="botonPagar" class="botonPagar visible">Pagar</button>
+                    <button id="limpiar" class="botonLimpiar visible">Vaciar carrito</button>
+                </div>
+            </div>
+        </article>
     </section>               
 </main>
 
@@ -137,6 +106,10 @@
         <hr>
         <p>Espacio Creativo</p>
     </footer>
-    <!--<script src="../JS/main.js"></script>-->
+    <!--script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--script de Tostify-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../JS/merceria.js"></script> 
   </body>
 </html>
